@@ -1,0 +1,48 @@
+[submodule "vim/vim.symlink/bundle/ctrlp"]
+	path = vim/vim.symlink/bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "vim/vim.symlink/bundle/l9"]
+	path = vim/vim.symlink/bundle/l9
+	url = git://github.com/vim-scripts/L9.git
+[submodule "vim/vim.symlink/bundle/vim-rails"]
+	path = vim/vim.symlink/bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "vim/vim.symlink/bundle/vim-pathogen"]
+	path = vim/vim.symlink/bundle/vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
+[submodule "vim/vim.symlink/bundle/vim-ruby"]
+	path = vim/vim.symlink/bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/vim.symlink/bundle/vim-markdown"]
+	path = vim/vim.symlink/bundle/vim-markdown
+	url = git://github.com/plasticboy/vim-markdown.git
+[submodule "vim/vim.symlink/bundle/vim-fuzzyfinder"]
+	path = vim/vim.symlink/bundle/vim-fuzzyfinder
+	url = git://github.com/vim-scripts/FuzzyFinder.git
+[submodule "vim/vim.symlink/bundle/vim-fugitive"]
+	path = vim/vim.symlink/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/vim.symlink/bundle/vim-commentary"]
+	path = vim/vim.symlink/bundle/vim-commentary
+	url = git://github.com/tpope/vim-commentary.git
+[submodule "vim/vim.symlink/bundle/vim-coffee-script"]
+	path = vim/vim.symlink/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/vim.symlink/bundle/zoomwin"]
+	path = vim/vim.symlink/bundle/zoomwin
+	url = git://github.com/vim-scripts/ZoomWin.git
+[submodule "vim/vim.symlink/bundle/vim-endwise"]
+	path = vim/vim.symlink/bundle/vim-endwise
+	url = git://github.com/tpope/vim-endwise.git
+[submodule "vim/vim.symlink/bundle/vim-less"]
+	path = vim/vim.symlink/bundle/vim-less
+	url = git://github.com/groenewege/vim-less.git
+[submodule "vim/vim.symlink/bundle/vim-slim"]
+	path = vim/vim.symlink/bundle/vim-slim
+	url = git://github.com/bbommarito/vim-slim.git
+[submodule "vim/vim.symlink/bundle/molokai"]
+	path = vim/vim.symlink/bundle/molokai
+	url = git://github.com/mrtazz/molokai.vim.git
+[submodule "vim/vim.symlink/bundle/vim-javascript"]
+	path = vim/vim.symlink/bundle/vim-javascript
+	url = git://github.com/pangloss/vim-javascript.git
