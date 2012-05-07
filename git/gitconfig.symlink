@@ -8,16 +8,24 @@
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
   frag = magenta bold
   old = red bold
   new = green bold
 [color "status"]
-  added = yellow
-  changed = green
+  added = green
+  changed = yellow
   untracked = cyan
 [alias]
   br = branch
+  c = commit
+  co = checkout
+  df = diff
+  lc = log ORIG_HEAD.. --stat --no-merges
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   st = status
   rb = rebase
+  rbc = rebase --continue
   track = checkout -t
+  unstage = reset HEAD --
