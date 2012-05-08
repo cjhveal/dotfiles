@@ -15,7 +15,7 @@ fi
 local dir='%{$fg[blue]%}${PWD/#$HOME/~}%{$reset_color%}'
 local ruby_ver=''
 if which rbenv &> /dev/null; then
-  ruby_ver='%{$fg[red]%}‹$(rbenv_prompt_info)›%{$reset_color%}'
+  ruby_ver='%{$fg[red]%}‹$(rbenv version-name)›%{$reset_color%}'
 else
   if which rvm-prompt &> /dev/null; then
     ruby_ver='%{$fg[red]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
