@@ -2,7 +2,8 @@
 This repository contains my personal configurations.
 
 ### TODO
-* rbenv/rvm configurations + zsh completions
-* add rbenv to path, with optional rvm support.
-* go through zsh plugins and grab whatever i want
-* remove m from my timestamp, find a way to add lowercase weekday.
+* zsh completions
+* learn about zsh functions
+* automatically detect and configure rbenv/rvm
+* find a way to add lowercase weekday to prompt
+* get rails commands to check if in a rails project
