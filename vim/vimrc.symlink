@@ -134,7 +134,7 @@ set wildignore+=*vim/backups*
 " =========
 
 " Start scrolling when we're getting close to margins
-set scrolloff=10
+set scrolloff=5
 set sidescrolloff=15
 set sidescroll=1
 
@@ -162,6 +162,9 @@ nnoremap <c-l> <c-w>l
 
 " find merge conflict markers
 nmap <silent> <leader>cf <ESC>/\v^[<=>]{7}( .*\|$)<CR>
+
+" clear search highlighting when hitting enter
+:nnoremap <CR> :nohlsearch<CR>
 
 " Privatize Ruby methods
 " ===========
