@@ -17,4 +17,5 @@ This repository contains my personal configurations.
 * fix vim colorscheme (modified solarize? tomorrow-night?)
 * canabalize old vim-rc for any missed behaviours
 * add vim-powerline and patched fonts
+* add nerd-tree for vim
 * do a deep dive of dotfiles on github
