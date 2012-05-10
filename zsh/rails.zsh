@@ -7,7 +7,13 @@ function _rails_command () {
   fi
 }
 
-alias rc='_rails_command console'
+
+if which pry-rails-console &> /dev/null; then
+  alias rc='pry-rails-console'
+else
+  alias rc='_rails_command console'
+fi
+
 alias rd='_rails_command destroy'
 alias rdb='_rails_command dbconsole'
 alias rdbm='rake db:migrate db:test:clone'
