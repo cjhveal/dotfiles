@@ -2,7 +2,7 @@
 This repository contains my personal configurations.
 
 ### TODO
-* add osx config script
+* add osx config script (map caps to escape, finder settings, etc)
 * add terminal colorscheme
 * information on how to install this repo
 * bootstrap script (set shell to zsh, etc)
