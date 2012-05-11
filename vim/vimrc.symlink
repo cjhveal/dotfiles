@@ -33,7 +33,7 @@ call pathogen#helptags()
 " General Config
 " ==============
 
-" let mapleader='\'
+let mapleader=','
 set encoding=utf-8
 set number                      " Line numbers are good
 set backspace=indent,eol,start  " Allow backspace in insert mode
@@ -147,6 +147,9 @@ set statusline+=\ %f\ %m\ %r                    " Show filename/path
 set statusline+=%=                              " Set right-side status info after this line
 set statusline+=%l/%L:%v                        " Set <line number>/<total lines>:<column>
 set statusline+=\                               " Set ending space
+
+let g:Powerline_symbols='fancy'
+
 
 " Custom Mappings
 " ==============
