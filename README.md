@@ -26,4 +26,7 @@ This repository contains my personal configurations.
   * get rails commands to check if in a rails project
   * automatically detect and configure rbenv/rvm
 * Git
+  * hitch for pair programming
   * gitattributes?
+* Other
+  * .wgetrc (look in mathiasbynens/dotfiles)
