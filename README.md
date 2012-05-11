@@ -29,4 +29,3 @@ This repository contains my personal configurations.
   * hitch for pair programming
   * gitattributes?
 * Other
-  * .wgetrc (look in mathiasbynens/dotfiles)
