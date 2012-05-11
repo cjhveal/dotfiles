@@ -4,6 +4,7 @@
 [submodule "vim/vim.symlink/bundle/l9"]
 	path = vim/vim.symlink/bundle/l9
 	url = git://github.com/vim-scripts/L9.git
+  ignore = untracked
 [submodule "vim/vim.symlink/bundle/vim-rails"]
 	path = vim/vim.symlink/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
@@ -19,6 +20,7 @@
 [submodule "vim/vim.symlink/bundle/vim-fuzzyfinder"]
 	path = vim/vim.symlink/bundle/vim-fuzzyfinder
 	url = git://github.com/vim-scripts/FuzzyFinder.git
+  ignore = untracked
 [submodule "vim/vim.symlink/bundle/vim-fugitive"]
 	path = vim/vim.symlink/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -31,6 +33,7 @@
 [submodule "vim/vim.symlink/bundle/zoomwin"]
 	path = vim/vim.symlink/bundle/zoomwin
 	url = git://github.com/vim-scripts/ZoomWin.git
+  ignore = untracked
 [submodule "vim/vim.symlink/bundle/vim-endwise"]
 	path = vim/vim.symlink/bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
