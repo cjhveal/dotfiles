@@ -1,3 +1,5 @@
+let g:ctrlp_custom_ignore = '\.DS_Store|\.git$\|\.hg$\|\.svn$'
+
 let g:ctrlp_by_filename = 1
 let g:ctrlp_map = ',p'
 
