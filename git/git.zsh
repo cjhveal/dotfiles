@@ -9,11 +9,15 @@ alias gco='git checkout'
 alias gcm='git checkout master'
 alias gb='git branch'
 alias gba='git branch -a'
-alias gss='git status -s'
+alias gs='git status -s'
 alias ga='git add'
 alias gm='git merge'
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
+alias glg='git lg'
+alias gd='git d'
+alias gdd='git dd'
+alias gdl='git dl'
 
 # Will return the current branch name
 # Usage example: git pull origin $(current_branch)

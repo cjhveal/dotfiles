@@ -1,26 +1,19 @@
 [user]
   name = Cody Veal
   email = cveal05@gmail.com
-[color]
-  ui = auto
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
-[color "diff"]
-  meta = magenta
-  frag = yellow
-  old = red bold
-  new = green bold
-[color "status"]
-  added = green
-  changed = yellow
-  untracked = cyan
+[github]
+  user = cjhveal
+[advice]
+  statusHints = false
 [alias]
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
   br = branch
   c = commit
   co = checkout
-  df = diff
+  d = diff --color-words
+  dd = diff --color-words=.
+  dl = diff
+  diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
   lc = log ORIG_HEAD.. --stat --no-merges
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
@@ -30,3 +23,42 @@
   rbc = rebase --continue
   track = checkout -t
   unstage = reset HEAD --
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = cyan
+[core]
+  excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes
+[merge]
+  log = true
+[push]
+  default = upstream
+[rerere]
+  enabled = true
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+  insteadOf = "github:"
+[url "git@gist.github.com:"]
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
+[url "git@heroku.com:"]
+  insteadOf = "heroku:"
