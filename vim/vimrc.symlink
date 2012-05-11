@@ -167,23 +167,4 @@ nnoremap <c-l> <c-w>l
 nmap <silent> <leader>cf <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
 " clear search highlighting when hitting enter
-:nnoremap <CR> :nohlsearch<CR>
-
-" Privatize Ruby methods
-" ===========
-
-function! Privatize()
-  let priorMethod = PriorMethodDefinition()
-  exec "normal iprivate :" . priorMethod  . "\<Esc>=="
-endfunction
-
-function! PriorMethodDefinition()
-  let lineNumber = search('def', 'bn')
-  let line       = getline(lineNumber)
-  if line == 0
-    echo "No prior method definition found"
-  endif
-  return matchlist(line, 'def \(\w\+\).*')[1]
-endfunction
-
-map <Leader>p :call Privatize()<CR>
+nnoremap <CR> :nohlsearch<CR>
