@@ -19,6 +19,12 @@ alias gd='git d'
 alias gdd='git dd'
 alias gdl='git dl'
 
+hub_path=$(which hub)
+if [[ -f $hub_path ]]
+then
+  alias git=$hub_path
+fi
+
 # Will return the current branch name
 # Usage example: git pull origin $(current_branch)
 function current_branch() {
