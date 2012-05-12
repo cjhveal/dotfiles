@@ -1,0 +1,43 @@
+require 'rubygems'
+require 'interactive_editor'
+
+# Use AwesomePrint if avaiable
+begin
+  require 'ap'
+
+  IRB::Irb.class_eval do
+    def output_value
+      ap @context.last_value
+    end
+  end
+rescue LoadError => err
+  puts "gem install awesome_print # <-- highly recomended"
+end
+
+# Use 'clear' or 'c' to clear the screen
+def clear
+  system 'clear'
+  if ENV['RAILS_ENV']
+    return "Rails environment: " + ENV['RAILS_ENV']
+  else
+    return "No rails environment - happy hacking!";
+  end
+end
+alias c clear
+
+# Load the readline module.
+IRB.conf[:USE_READLINE] = true
+
+# Remove the annoying irb(main):001:0 and replace with >>
+IRB.conf[:PROMPT_MODE]  = :SIMPLE
+
+# Tab Completion
+require 'irb/completion'
+
+# Automatic Indentation
+IRB.conf[:AUTO_INDENT]=true
+
+# Save History between irb sessions
+require 'irb/ext/save-history'
+IRB.conf[:SAVE_HISTORY] = 100
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.dotfiles/irb/irb-save-history"
