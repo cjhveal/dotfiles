@@ -7,11 +7,11 @@ This repository contains my personal configurations.
   * add terminal colorscheme
 * Meta
   * default packages list (brews/gems)
-  * information on how to install this repo
   * do a deep dive of dotfiles on github
   * bootstrap script (set shell to zsh, etc)
 * Vim
   * mvim should not use system pastebin (confirm?)
+  * Find a suitible escape replacement that works in terminal
   * fix vim colorscheme (modified solarize? tomorrow-night?)
   * canabalize old vim-rc for any missed behaviours
   * vim autocomplete function
@@ -21,11 +21,15 @@ This repository contains my personal configurations.
   * zsh completions and learn about zsh functions
   * find a way to add lowercase weekday to prompt
 * Ruby
+  * Look into wirble as an optional irb enhancement
   * set up pry as default rails console (rc should use pry if possible)
-  * add an irbrc for systems without pry (make awesome print default for irb)
   * get rails commands to check if in a rails project
   * automatically detect and configure rbenv/rvm
 * Git
   * hitch for pair programming
   * gitattributes?
+* Install
+  * information on how to install this repo
+  * make an ./install dir which will hold install scripts
+  * make rakefile source all files under install
 * Other
