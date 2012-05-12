@@ -1,8 +1,6 @@
-require 'rubygems'
-require 'interactive_editor'
-
 # Use AwesomePrint if avaiable
 begin
+  require 'rubygems'
   require 'ap'
 
   IRB::Irb.class_eval do
@@ -11,7 +9,7 @@ begin
     end
   end
 rescue LoadError => err
-  puts "gem install awesome_print # <-- highly recomended"
+  puts "gem awesome_print not found"
 end
 
 # Use 'clear' or 'c' to clear the screen
