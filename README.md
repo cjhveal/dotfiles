@@ -17,6 +17,7 @@ This repository contains my personal configurations.
   * vim autocomplete function
   * Pull apart vimrc functionality into plugins/settings files
   * Add a command to reload vimrc
+  * look into vim-textobj plugins (ruby symbol, entire)
 * ZSH
   * zsh completions and learn about zsh functions
   * find a way to add lowercase weekday to prompt
