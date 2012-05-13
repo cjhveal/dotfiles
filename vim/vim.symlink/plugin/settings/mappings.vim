@@ -1,8 +1,13 @@
 " Custom Mappings
 " ==============
+"
+" Arpeggio lets us define key-chord combos (simultaneous key presses)
+call arpeggio#load()
 
 " Shift space exits insert mode (mvim only)
 inoremap <S-Space> <esc>
+
+Arpeggio inoremap jk  <Esc>
 
 " Y should behave like C and D
 nmap Y y$
@@ -50,3 +55,5 @@ vmap <D-A> :Tabularize /
 " SplitJoin plugin
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
+
+
