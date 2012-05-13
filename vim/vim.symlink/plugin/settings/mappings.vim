@@ -47,6 +47,6 @@ nnoremap ` '
 nmap <D-A> :Tabularize /
 vmap <D-A> :Tabularize /
 
-SplitJoin plugin
+" SplitJoin plugin
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
