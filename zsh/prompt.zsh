@@ -24,7 +24,8 @@ fi
 local git_branch='$(git_prompt_ahead)$(git_prompt_status)%{$reset_color%}$(git_prompt_info)'
 local prompt_char='$(prompt_character)'
 
-local time='%{$fg[cyan]%}[%D{%-m/%f %Kh%M}]%{$reset_color%}'
+local time='%{$fg[cyan]%}[%D{%Kh%M %a %f/%-m}]%{$reset_color%}'
+
 local return='%(?..%{$fg[red]%}%? ↲%{$reset_color%})'
 
 ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[yellow]%}⚡%{$reset_color%}"
