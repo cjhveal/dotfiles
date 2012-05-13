@@ -137,7 +137,7 @@ set wildignore+=*vim/backups*
 
 " Start scrolling when we're getting close to margins
 set scrolloff=5
-set sidescrolloff=15
+set sidescrolloff=5
 set sidescroll=1
 
 " Status Line
@@ -151,22 +151,3 @@ set statusline+=%l/%L:%v                        " Set <line number>/<total lines
 set statusline+=\                               " Set ending space
 
 let g:Powerline_symbols='fancy'
-
-
-" Custom Mappings
-" ==============
-nmap Y y$
-
-" :W should behave like :w
-cnoreabbrev W w
-
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-" find merge conflict markers
-nmap <silent> <leader>cf <ESC>/\v^[<=>]{7}( .*\|$)<CR>
-
-" clear search highlighting when hitting enter
-nnoremap <CR> :nohlsearch<CR>
