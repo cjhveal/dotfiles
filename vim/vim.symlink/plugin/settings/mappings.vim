@@ -7,6 +7,7 @@ call arpeggio#load()
 " Shift space exits insert mode (mvim only)
 inoremap <S-Space> <esc>
 
+" j and k simultaneously exits insert mode.
 Arpeggio inoremap jk  <Esc>
 
 " Y should behave like C and D
