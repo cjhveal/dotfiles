@@ -74,11 +74,14 @@
 [submodule "vim/vim.symlink/bundle/textobj-user"]
 	path = vim/vim.symlink/bundle/textobj-user
 	url = https://github.com/kana/vim-textobj-user.git
+  ignore = untracked
 [submodule "vim/vim.symlink/bundle/textobj-entire"]
 	path = vim/vim.symlink/bundle/textobj-entire
 	url = git://github.com/kana/vim-textobj-entire.git
+  ignore = untracked
 [submodule "vim/vim.symlink/bundle/textobj-datetime"]
 	path = vim/vim.symlink/bundle/textobj-datetime
+  ignore = untracked
 	url = git://github.com/kana/vim-textobj-datetime.git
 [submodule "vim/vim.symlink/bundle/textobj-rubysymbol"]
 	path = vim/vim.symlink/bundle/textobj-rubysymbol
