@@ -11,16 +11,14 @@ This repository contains my personal configurations.
   * bootstrap script (set shell to zsh, etc)
 * Vim
   * mvim should not use system pastebin (confirm?)
-  * Find a suitible escape replacement that works in terminal
   * fix vim colorscheme (modified solarize? tomorrow-night?)
   * canabalize old vim-rc for any missed behaviours
   * vim autocomplete function
   * Pull apart vimrc functionality into plugins/settings files
-  * Add a command to reload vimrc
-  * look into vim-textobj plugins (ruby symbol, entire)
+  * Fix command to reload vimrc (,vr broken?)
 * ZSH
   * zsh completions and learn about zsh functions
-  * find a way to add lowercase weekday to prompt
+  * what is zvm?
 * Ruby
   * Look into wirble as an optional irb enhancement
   * set up pry as default rails console (rc should use pry if possible)
