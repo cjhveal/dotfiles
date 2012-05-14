@@ -89,3 +89,6 @@ map ,} ysiw}
 map ,{ ysiw{
 vmap ,} c{ <C-R>" }<ESC>
 vmap ,{ c{<C-R>"}<ESC>
+
+" gary bernhardt's hashrocket
+imap <c-l> <space>=><space>
