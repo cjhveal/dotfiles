@@ -71,3 +71,18 @@
 [submodule "vim/vim.symlink/bundle/vim-repeat"]
 	path = vim/vim.symlink/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "vim/vim.symlink/bundle/textobj-user"]
+	path = vim/vim.symlink/bundle/textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
+[submodule "vim/vim.symlink/bundle/textobj-entire"]
+	path = vim/vim.symlink/bundle/textobj-entire
+	url = git://github.com/kana/vim-textobj-entire.git
+[submodule "vim/vim.symlink/bundle/textobj-datetime"]
+	path = vim/vim.symlink/bundle/textobj-datetime
+	url = git://github.com/kana/vim-textobj-datetime.git
+[submodule "vim/vim.symlink/bundle/textobj-rubysymbol"]
+	path = vim/vim.symlink/bundle/textobj-rubysymbol
+	url = https://github.com/bootleq/vim-textobj-rubysymbol.git
+[submodule "vim/vim.symlink/bundle/textobj-rubyblock"]
+	path = vim/vim.symlink/bundle/textobj-rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
