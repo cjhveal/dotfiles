@@ -10,8 +10,8 @@
   br = branch
   c = commit
   co = checkout
-  d = diff --color-words
-  dd = diff --color-words=.
+  d = diff --color-words=.
+  dw = diff --color-words
   dl = diff
   diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
   lc = log ORIG_HEAD.. --stat --no-merges
