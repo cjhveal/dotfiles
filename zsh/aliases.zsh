@@ -1,5 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias -- -='cd -'
 
 cd () {
@@ -8,9 +10,9 @@ cd () {
   elif [[ "x$*" == "x...." ]]; then
     cd ../../..
   elif [[ "x$*" == "x....." ]]; then
-    cd ../../..
-  elif [[ "x$*" == "x......" ]]; then
     cd ../../../..
+  elif [[ "x$*" == "x......" ]]; then
+    cd ../../../../..
   else
     builtin cd "$@"
   fi
