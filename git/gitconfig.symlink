@@ -18,9 +18,10 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  st = status
+  pup = !git pull && git submodule init && git submodule update
   rb = rebase
   rbc = rebase --continue
+  st = status
   track = checkout -t
   unstage = reset HEAD --
 [color]
