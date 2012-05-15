@@ -52,7 +52,6 @@ set spelllang=en_us             " Spelling correction
 set shortmess=I                 " Don't show intro information
                                 " http://items.sjbach.com/319/configuring-vim-right
 
-
 " Syntax
 " ======
 
