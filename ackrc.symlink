@@ -1,6 +1,11 @@
+--smart-case
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=vendor
 --ignore-dir=public/generated
+--type-add=ruby=ru
+--type-add=js=coffee,json
+--type-add=css=less,sass,scss
+--type-add=html=slim,haml
 --sort-files
 -a
