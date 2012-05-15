@@ -100,3 +100,9 @@ nnoremap <Leader>sn ]s
 nnoremap <Leader>sp ]p
 nnoremap <Leader>sa zg
 nnoremap <Leader>s? z=
+
+" change directory to that of current file
+nmap <Leader>cd :cd%:p:h<cr>
+
+" diff buffer with original to see changes
+nnoremap <Leader>d :call DiffOrig()<CR>
