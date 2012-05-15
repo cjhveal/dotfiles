@@ -92,3 +92,11 @@ vmap ,{ c{<C-R>"}<ESC>
 
 " gary bernhardt's hashrocket
 imap <c-l> <space>=><space>
+
+" Toggle spelling
+nnoremap <Leader>ss :setlocal spell!<CR>
+" n: next, p: previous, a: add, ?: suggest
+nnoremap <Leader>sn ]s
+nnoremap <Leader>sp ]p
+nnoremap <Leader>sa zg
+nnoremap <Leader>s? z=
