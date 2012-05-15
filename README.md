@@ -16,15 +16,18 @@ This repository contains my personal configurations.
   * vim autocomplete function
   * Pull apart vimrc functionality into plugins/settings files
   * Fix command to reload vimrc (,vr broken?)
+  * What is paste mode?
+  * when I quit it should close the buffer not just window
 * ZSH
   * zsh completions and learn about zsh functions
-  * what is zvm?
+  * what is zvm? what is fasd?
 * Ruby
   * Look into wirble as an optional irb enhancement
   * set up pry as default rails console (rc should use pry if possible)
   * get rails commands to check if in a rails project
   * automatically detect and configure rbenv/rvm
 * Git
+  * Give full names to all aliases, shortcuts in .zsh
   * hitch for pair programming
   * gitattributes?
 * Install
