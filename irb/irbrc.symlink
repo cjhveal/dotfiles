@@ -12,17 +12,6 @@ rescue LoadError => err
   puts "gem awesome_print not found"
 end
 
-# Use 'clear' or 'c' to clear the screen
-def clear
-  system 'clear'
-  if ENV['RAILS_ENV']
-    return "Rails environment: " + ENV['RAILS_ENV']
-  else
-    return "No rails environment - happy hacking!";
-  end
-end
-alias c clear
-
 # Load the readline module.
 IRB.conf[:USE_READLINE] = true
 
@@ -39,3 +28,26 @@ IRB.conf[:AUTO_INDENT]=true
 require 'irb/ext/save-history'
 IRB.conf[:SAVE_HISTORY] = 100
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.dotfiles/irb/irb-save-history"
+
+# Lists methods on class excluding those defined by parent classes
+class Object
+  def local_methods(obj = self)
+    (obj.methods - obj.class.superclass.instance_methods).sort
+  end
+end
+
+# Use 'clear' or 'c' to clear the screen
+def clear
+  system 'clear'
+end
+alias c clear
+
+# copy to clipboard
+def copy(data)
+  File.popen('pbcopy', 'w') { |p| p << data.to_s }
+  $?.success?
+end
+
+def IRB.reload
+  load __FILE__
+end
