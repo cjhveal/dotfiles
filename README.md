@@ -23,9 +23,10 @@ This repository contains my personal configurations.
   * what is zvm? what is fasd?
 * Ruby
   * Look into wirble as an optional irb enhancement
-  * set up pry as default rails console (rc should use pry if possible)
-  * get rails commands to check if in a rails project
   * automatically detect and configure rbenv/rvm
+  * what is prefer for gem inclusion?
+  * gemrc file
+  * use pp for printing if ap not installed
 * Git
   * Give full names to all aliases, shortcuts in .zsh
   * hitch for pair programming
@@ -35,3 +36,4 @@ This repository contains my personal configurations.
   * make an ./install dir which will hold install scripts
   * make rakefile source all files under install
 * Other
+  * toprc ?!
