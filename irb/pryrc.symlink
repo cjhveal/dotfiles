@@ -1,3 +1,7 @@
+# Load module shared by all prompts
+load File.dirname(__FILE__) + '/.dotfiles/irb/rubyrc.rb'
+include RubyRC
+
 # === EDITOR ===
 Pry.editor = 'vi'
 

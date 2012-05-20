@@ -1,3 +1,7 @@
+# Load module shared by all prompts
+load File.dirname(__FILE__) + '/.dotfiles/irb/rubyrc.rb'
+include RubyRC
+
 # Use AwesomePrint if avaiable
 begin
   require 'rubygems'
@@ -48,6 +52,19 @@ def copy(data)
   $?.success?
 end
 
+# reload irbrc
 def IRB.reload
   load __FILE__
+end
+
+# open documentation
+# ri 'Array#pop' or Array.ri :pop
+class Object
+  def ri(method = nil)
+    unless method && method =~ /^[A-Z]/ # if class isn't specified
+      klass = self.kind_of?(Class) ? name : self.class.name
+      method = [klass, method].compact.join('#')
+    end
+    puts `ri '#{method}'`
+  end
 end
