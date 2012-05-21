@@ -40,7 +40,6 @@ function cdl() {
 # if mvim is installed use it for terminal
 command -v mvim >/dev/null 2>&1 && {
   alias vim='mvim -v'
-  compdef _vim mvim=vim
 }
 
 alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
