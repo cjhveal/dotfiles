@@ -36,4 +36,5 @@ This repository contains my personal configurations.
   * make an ./install dir which will hold install scripts
   * make rakefile source all files under install
 * Other
+  * irssi config (cloudhead)
   * toprc ?!
