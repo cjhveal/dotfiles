@@ -36,3 +36,7 @@ function mcd() {
 function cdl() {
   cd "$1" && l
 }
+
+
+alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
+alias localip='ipconfig getifaddr en0'
