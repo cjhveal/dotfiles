@@ -1,6 +1,18 @@
 # My Dotfiles
 This repository contains my personal configurations.
 
+### INSTALL INSTRUCTIONS
+1. Run rake to install
+  <code>rake</code>
+
+2. Change shell to zsh
+  <code>chsh -s $(which zsh)</code>
+
+3. Install all vim plugins
+  <code>git submodule update --init</code>
+
+4. <code>open ~/.dotfiles/fonts</code> and install all fonts
+
 ### TODO
 * OS X
   * add osx config script (map caps to escape, finder settings, etc)
@@ -33,8 +45,7 @@ This repository contains my personal configurations.
   * gitattributes?
 * Install
   * information on how to install this repo
-  * make an ./install dir which will hold install scripts
-  * make rakefile source all files under install
+  * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
 * Other
   * irssi config (cloudhead)
   * toprc ?!
