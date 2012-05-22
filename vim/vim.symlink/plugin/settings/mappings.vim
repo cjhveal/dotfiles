@@ -4,9 +4,6 @@
 " Arpeggio lets us define key-chord combos (simultaneous key presses)
 call arpeggio#load()
 
-" Shift space exits insert mode (mvim only)
-inoremap <S-Space> <esc>
-
 " j and k simultaneously exits insert mode.
 Arpeggio inoremap jk  <Esc>
 
