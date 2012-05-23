@@ -16,7 +16,7 @@ alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 alias glg='git lg'
 alias gd='git d'
-alias gdw='git dw'
+alias gdd='git dd'
 alias gdl='git dl'
 
 hub_path=$(which hub)
