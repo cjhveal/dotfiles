@@ -1,6 +1,6 @@
 # TODO
 * OS X
-  * add osx config script (map caps to escape, finder settings, etc)
+  * get latest version of hacker defaults osx script
   * add terminal colorscheme
 * Meta
   * default packages list (brews/gems)
