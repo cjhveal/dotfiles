@@ -1,7 +1,6 @@
 # TODO
 * OS X
   * get latest version of hacker defaults osx script
-  * add terminal colorscheme
 * Meta
   * default packages list (brews/gems)
   * do a deep dive of dotfiles on github
