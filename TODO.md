@@ -22,7 +22,7 @@
 * Git
   * Give full names to all aliases, shortcuts in .zsh
   * hitch for pair programming
-  * gitattributes?
+  * gitattributes? (use exif for diffing pngs?)
 * Install
   * information on how to install this repo
   * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
