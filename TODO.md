@@ -19,7 +19,6 @@
 * Ruby
   * Look into wirble as an optional irb enhancement
   * automatically detect and configure rbenv/rvm
-  * what is prefer for gem inclusion?
   * gemrc file
   * use pp for printing if ap not installed
 * Git
