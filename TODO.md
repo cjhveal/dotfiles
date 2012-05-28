@@ -6,14 +6,13 @@
   * do a deep dive of dotfiles on github
   * bootstrap script (set shell to zsh, etc)
 * Vim
-  * mvim should not use system pastebin (confirm?)
   * fix vim colorscheme (modified solarize? tomorrow-night?)
   * canabalize old vim-rc for any missed behaviours
-  * vim autocomplete function
-  * Pull apart vimrc functionality into plugins/settings files
-  * Fix command to reload vimrc (,vr broken?)
-  * What is paste mode?
+  * Fix command to reload vimrc (,vr reloads current file)
+  * Add keybinding for paste mode
   * when I quit it should close the buffer not just window
+  * Q should behave as gq
+  * ctrl-p should ignore .git directory
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
