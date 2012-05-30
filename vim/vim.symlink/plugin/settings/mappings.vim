@@ -90,6 +90,10 @@ vmap ,{ c{<C-R>"}<ESC>
 " gary bernhardt's hashrocket
 imap <c-l> <space>=><space>
 
+" one-key indentation
+nmap > >>
+nmap < <<
+
 " Toggle spelling
 nnoremap <Leader>ss :setlocal spell!<CR>
 " n: next, p: previous, a: add, ?: suggest
@@ -103,3 +107,15 @@ nmap <Leader>cd :cd%:p:h<cr>
 
 " diff buffer with original to see changes
 nnoremap <Leader>d :call DiffOrig()<CR>
+
+" split window
+nmap \|h  :topleft  vnew<CR>
+nmap \|l :botright vnew<CR>
+nmap \|k    :topleft  new<CR>
+nmap \|j  :botright new<CR>
+
+" split buffer
+nmap \h  :leftabove  vnew<CR>
+nmap \l :rightbelow vnew<CR>
+nmap \k    :leftabove  new<CR>
+nmap \j  :rightbelow new<CR>
