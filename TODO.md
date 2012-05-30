@@ -7,11 +7,12 @@
 * Vim
   * fix vim colorscheme (modified solarize? tomorrow-night?)
   * canabalize old vim-rc for any missed behaviours
-  * Fix command to reload vimrc (,vr reloads current file)
+  * Fix command to reload vimrc (,vr just reloads current file)
   * Add keybinding for paste mode
   * when I quit it should close the buffer not just window
   * Q should behave as gq
   * ctrl-p should ignore .git directory (confirm?)
+  * set up wrapping in text files and markdown
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
