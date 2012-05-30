@@ -37,6 +37,10 @@ function cdl() {
   cd "$1" && l
 }
 
+function ..l() {
+  cd .. && l
+}
+
 # if mvim is installed use it for terminal
 command -v mvim >/dev/null 2>&1 && {
   alias vim='mvim -v'
