@@ -4,6 +4,7 @@
 * Meta
   * include default packages list to load (brews/gems)
   * bootstrap script (set shell to zsh, install packages)
+  * create a dev branch and use master as a stable release
 * Vim
   * fix vim colorscheme (modified solarize? tomorrow-night?)
   * canabalize old vim-rc for any missed behaviours
@@ -15,6 +16,12 @@
   * investigate vundle
   * use QQ to quit intelligently, Q! to quit without saving
   * add json syntax highlighting (?)
+  * ctags?
+  * make nerdtree unaffected by | splits
+  * vim templates?
+  * install ack and map to ,a
+  * try gundo
+  * fugitive bindings
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
@@ -34,3 +41,4 @@
   * irssi config (cloudhead)
   * toprc ?!
   * what is tig? (see mattly)
+  * com.apple.Terminal.plist? (see mitsuhiko)
