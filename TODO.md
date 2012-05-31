@@ -19,9 +19,9 @@
   * automatically detect and configure rbenv/rvm
   * use pp for printing if ap not installed
 * Git
-  * Give full names to all aliases, shortcuts in .zsh
   * hitch for pair programming
   * more gitattributes? (use exif for diffing pngs?)
+  * make a git template with hooks (see cypher)
 * Install
   * information on how to install this repo
   * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
