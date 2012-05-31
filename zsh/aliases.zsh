@@ -47,7 +47,7 @@ command -v mvim >/dev/null 2>&1 && {
 
 alias reload!='. ~/.zshrc'
 
-alias a='ack -ia'
+alias a='ack'
 alias oo='open .'
 
 alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
