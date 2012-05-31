@@ -2,6 +2,7 @@
 sources:
 - http://gems.rubyforge.org
 - http://gems.github.com
+- http://gemcutter.org
 install: --no-rdoc
 update: --no-rdoc
 rdoc: --line-numbers
