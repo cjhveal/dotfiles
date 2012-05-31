@@ -21,7 +21,7 @@ cd () {
 alias _='sudo'
 
 alias lsa='ls -lah'
-alias l='ls -la'
+alias l='ls -lah'
 alias ll='ls -l'
 alias sl=ls
 
