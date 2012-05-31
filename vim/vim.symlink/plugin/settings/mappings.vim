@@ -133,3 +133,9 @@ nnoremap x "_x
 nnoremap X "_X
 vnoremap x "_x
 vnoremap X "_X
+
+" Default searches to "very magic", more like the world outside Vim.
+nnoremap / /\v
+vnoremap / /\v
+nnoremap ? ?\v
+vnoremap ? ?\v
