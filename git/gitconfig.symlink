@@ -1,66 +1,132 @@
 [user]
   name = Cody Veal
   email = cveal05@gmail.com
+
 [github]
   user = cjhveal
+
 [advice]
   statusHints = false
+
 [alias]
+  a = add
+  ap = add --patch
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+	authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
   amend = commit --amend -C HEAD
   br = branch
   c = commit
+	ca = commit --amend
+	cm = commit --message
   co = checkout
   d = diff --color-words
+  ds = diff --staged --colorwords
   dd = diff --color-words=.
+  dds = diff --staged --color-words=.
   dl = diff
-  diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
+  dls = diff --staged
+  diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}"g | sed -ne \"s/^ //p\" | head -1' -
+  h = help
+  l = pull
   lc = log ORIG_HEAD.. --stat --no-merges
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	m = merge
+	mm = merge --no-ff
+	msg = commit --allow-empty -m
+  p = push
+	prune-remotes = "!for remote in `git remote`; do git remote prune $remote; done"
   pup = !git pull && git submodule init && git submodule update
+  r = remote
   rb = rebase
+  rba = rebase --abort
   rbc = rebase --continue
+  rbs = rebase --skip
+  rh = reset --hard
+  rhh = reset HEAD --hard
+  s = status --short --branch
+	sm = submodule
+	sma = submodule add
+	smu = submodule update --init
   st = status
   track = checkout -t
+	undo = reset --soft HEAD^
   unstage = reset HEAD --
+
 [color]
   ui = auto
+
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
+
 [color "diff"]
   meta = yellow
   frag = magenta
   old = red bold
   new = green bold
   whitespace = red reverse
+
 [color "status"]
   added = green
   changed = yellow
   untracked = cyan
+
 [core]
   excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
+
+[diff]
+	renames = copies
+	mnemonicprefix = true
+
+[diff "zip"]
+  textconv = unzip -c -a
+
 [merge]
   log = true
+
+[merge "railsschema"]
+	name = newer Rails schema version
+	driver = "ruby -e '\n\
+		system %(git), %(merge-file), %(--marker-size=%L), %(%A), %(%O), %(%B)\n\
+		b = File.read(%(%A))\n\
+		b.sub!(/^<+ .*\\nActiveRecord::Schema\\.define.:version => (\\d+). do\\n=+\\nActiveRecord::Schema\\.define.:version => (\\d+). do\\n>+ .*/) do\n\
+		  %(ActiveRecord::Schema.define(:version => #{[$1, $2].max}) do)\n\
+		end\n\
+		File.open(%(%A), %(w)) {|f| f.write(b)}\n\
+		exit 1 if b.include?(%(<)*%L)'"
+
+[merge "gemfilelock"]
+  name = relocks the gemfile.lock
+  driver = bundle lock
+
+[pager]
+  color = true
+
 [push]
   default = upstream
+
 [rerere]
   enabled = true
+
 [url "git@github.com:"]
   insteadOf = "gh:"
   pushInsteadOf = "github:"
   pushInsteadOf = "git://github.com/"
+
 [url "git://github.com/"]
   insteadOf = "github:"
+
 [url "git@gist.github.com:"]
   insteadOf = "gst:"
   pushInsteadOf = "gist:"
   pushInsteadOf = "git://gist.github.com/"
+
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
+
 [url "git@heroku.com:"]
   insteadOf = "heroku:"
