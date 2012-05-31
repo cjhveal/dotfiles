@@ -4,8 +4,9 @@
 " Arpeggio lets us define key-chord combos (simultaneous key presses)
 call arpeggio#load()
 
-" j and k simultaneously exits insert mode.
+" j and k simultaneously exits insert or visual mode
 Arpeggio inoremap jk  <Esc>
+Arpeggio vnoremap jk  <Esc>
 
 " Y should behave like C and D
 nmap Y y$
@@ -94,6 +95,10 @@ imap <c-l> <space>=><space>
 nmap > >>
 nmap < <<
 
+" reselect selection after indentation
+vnoremap > >gv
+vnoremap < <gv
+
 " Toggle spelling
 nnoremap <Leader>ss :setlocal spell!<CR>
 " n: next, p: previous, a: add, ?: suggest
@@ -119,3 +124,12 @@ nmap \h  :leftabove  vnew<CR>
 nmap \l :rightbelow vnew<CR>
 nmap \k    :leftabove  new<CR>
 nmap \j  :rightbelow new<CR>
+
+" alias ; to :
+nnoremap ; :
+
+" allow deleting without updating the clipboard (yank buffer)
+nnoremap x "_x
+nnoremap X "_X
+vnoremap x "_x
+vnoremap X "_X
