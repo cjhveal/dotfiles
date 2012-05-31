@@ -31,7 +31,7 @@ IRB.conf[:AUTO_INDENT]=true
 # Save History between irb sessions
 require 'irb/ext/save-history'
 IRB.conf[:SAVE_HISTORY] = 100
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.dotfiles/irb/irb-save-history"
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.dotfiles/ruby/irb-save-history"
 
 # Lists methods on class excluding those defined by parent classes
 class Object
