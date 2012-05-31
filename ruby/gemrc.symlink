@@ -1,0 +1,8 @@
+---
+sources:
+- http://gems.rubyforge.org
+- http://gems.github.com
+install: --no-rdoc
+update: --no-rdoc
+rdoc: --line-numbers
+search: --details --both

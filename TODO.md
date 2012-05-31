@@ -17,7 +17,6 @@
   * what is zvm? what is fasd?
 * Ruby
   * automatically detect and configure rbenv/rvm
-  * gemrc file
   * use pp for printing if ap not installed
 * Git
   * Give full names to all aliases, shortcuts in .zsh
