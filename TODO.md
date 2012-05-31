@@ -12,6 +12,7 @@
   * find good gq alias
   * set up wrapping in text files and markdown
   * set vim to use normal regexes? (/v after all search)
+  * investigate vundle
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
@@ -23,6 +24,7 @@
   * more gitattributes? (use exif for diffing pngs?)
   * make a git template with hooks (see cypher)
 * Install
+  * look into thorfiles for instalation (see gabebew/tasks)
   * information on how to install this repo
   * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
 * Other
