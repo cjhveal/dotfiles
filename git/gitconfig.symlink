@@ -20,7 +20,7 @@
 	cm = commit --message
   co = checkout
   d = diff --color-words
-  ds = diff --staged --colorwords
+  ds = diff --staged --color-words
   dd = diff --color-words=.
   dds = diff --staged --color-words=.
   dl = diff
