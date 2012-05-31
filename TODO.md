@@ -13,6 +13,8 @@
   * set up wrapping in text files and markdown
   * set vim to use normal regexes? (/v after all search)
   * investigate vundle
+  * use QQ to quit intelligently, Q! to quit without saving
+  * add json syntax highlighting (?)
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
