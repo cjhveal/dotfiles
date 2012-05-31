@@ -9,10 +9,9 @@
   * canabalize old vim-rc for any missed behaviours
   * Fix command to reload vimrc (,vr just reloads current file)
   * Add keybinding for paste mode
-  * when I quit it should close the buffer not just window
-  * Q should behave as gq
-  * ctrl-p should ignore .git directory (confirm?)
+  * find good gq alias
   * set up wrapping in text files and markdown
+  * set vim to use normal regexes? (/v after all search)
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
@@ -23,7 +22,7 @@
 * Git
   * Give full names to all aliases, shortcuts in .zsh
   * hitch for pair programming
-  * gitattributes? (use exif for diffing pngs?)
+  * more gitattributes? (use exif for diffing pngs?)
 * Install
   * information on how to install this repo
   * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
