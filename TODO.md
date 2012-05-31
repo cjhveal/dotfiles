@@ -28,6 +28,7 @@
 * Ruby
   * automatically detect and configure rbenv/rvm
   * use pp for printing if ap not installed
+  * change irb history file to ruby/
 * Git
   * hitch for pair programming
   * more gitattributes? (use exif for diffing pngs?)
