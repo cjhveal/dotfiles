@@ -3,10 +3,11 @@
 --ignore-dir=tmp
 --ignore-dir=vendor
 --ignore-dir=public/generated
---type-add=ruby=.ru
+--type-add=ruby=.ru,.haml,.slim,.rake,.thor,.builder
 --type-add=js=.coffee,.json,.js.erb
 --type-add=css=.less,.sass,.scss
 --type-add=html=.slim,.haml
+--type-set=markdown=.markdown,.md,.mdown
 --sort-files
 --color
 --follow
