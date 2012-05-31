@@ -34,6 +34,7 @@ call pathogen#helptags()
 " ==============
 
 let mapleader=','
+let maplocalleader=','
 set encoding=utf-8
 set number                      " Line numbers are good
 set backspace=indent,eol,start  " Allow backspace in insert mode
@@ -58,7 +59,7 @@ set shortmess=I                 " Don't show intro information
 syntax on
 syntax enable
 set t_Co=256
-color molokai
+colorscheme molokai
 set background=dark
 
 " Filetype overrides
@@ -131,6 +132,7 @@ set wildmode=list:longest
 set wildmenu                    " Enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~     " Stuff to ignore when tab completing
 set wildignore+=*vim/backups*
+set wildignore+=*.jpg,*.png,*.xpm,*.gif,*.pdf
 
 " Scrolling
 " =========
