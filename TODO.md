@@ -33,3 +33,4 @@
   * inputrc and editrc to use vim bindings in all inputs!
   * irssi config (cloudhead)
   * toprc ?!
+  * what is tig? (see mattly)
