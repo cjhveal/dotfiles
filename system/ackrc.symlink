@@ -8,6 +8,7 @@
 --type-add=css=.less,.sass,.scss
 --type-add=html=.slim,.haml
 --type-set=markdown=.markdown,.md,.mdown
+--type-set=vim=.vim
 --sort-files
 --color
 --follow
