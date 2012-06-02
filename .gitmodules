@@ -128,3 +128,9 @@
 [submodule "vim/vim.symlink/bundle/vim-ack"]
 	path = vim/vim.symlink/bundle/vim-ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/vim.symlink/bundle/vimux"]
+	path = vim/vim.symlink/bundle/vimux
+	url = https://github.com/benmills/vimux.git
+[submodule "vim/vim.symlink/bundle/vim-turbux"]
+	path = vim/vim.symlink/bundle/vim-turbux
+	url = https://github.com/jgdavey/vim-turbux.git
