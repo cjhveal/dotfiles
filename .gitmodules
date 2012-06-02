@@ -116,3 +116,9 @@
 [submodule "vim/vim.symlink/bundle/vim-matchit"]
 	path = vim/vim.symlink/bundle/vim-matchit
 	url = https://github.com/tsaleh/vim-matchit.git
+[submodule "vim/vim.symlink/bundle/textobj-url"]
+	path = vim/vim.symlink/bundle/textobj-url
+	url = https://github.com/mattn/vim-textobj-url.git
+[submodule "vim/vim.symlink/bundle/textobj-quoted"]
+	path = vim/vim.symlink/bundle/textobj-quoted
+	url = https://github.com/vim-scripts/vim-textobj-quoted.git
