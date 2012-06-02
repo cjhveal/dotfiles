@@ -59,8 +59,8 @@ set shortmess=I                 " Don't show intro information
 syntax on
 syntax enable
 set t_Co=256
-colorscheme molokai
 set background=dark
+colorscheme molokai
 
 " Filetype overrides
 " ==================
