@@ -89,3 +89,27 @@
 [submodule "vim/vim.symlink/bundle/textobj-rubyblock"]
 	path = vim/vim.symlink/bundle/textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "vim/vim.symlink/bundle/mac-classic"]
+	path = vim/vim.symlink/bundle/mac-classic
+	url = https://github.com/nelstrom/vim-mac-classic-theme.git
+[submodule "vim/vim.symlink/bundle/vim-unimpaired"]
+	path = vim/vim.symlink/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "vim/vim.symlink/bundle/vim-visual-star-search"]
+	path = vim/vim.symlink/bundle/vim-visual-star-search
+	url = https://github.com/bronson/vim-visual-star-search.git
+[submodule "vim/vim.symlink/bundle/text-obj-lastpat"]
+	path = vim/vim.symlink/bundle/text-obj-lastpat
+	url = https://github.com/kana/vim-textobj-lastpat.git
+[submodule "vim/vim.symlink/bundle/text-obj-comment"]
+	path = vim/vim.symlink/bundle/text-obj-comment
+	url = https://github.com/thinca/vim-textobj-comment.git
+[submodule "vim/vim.symlink/bundle/text-obj-between"]
+	path = vim/vim.symlink/bundle/text-obj-between
+	url = https://github.com/thinca/vim-textobj-between.git
+[submodule "vim/vim.symlink/bundle/text-obj-line"]
+	path = vim/vim.symlink/bundle/text-obj-line
+	url = https://github.com/kana/vim-textobj-line.git
+[submodule "vim/vim.symlink/bundle/text-obj-indent"]
+	path = vim/vim.symlink/bundle/text-obj-indent
+	url = https://github.com/kana/vim-textobj-indent.git
