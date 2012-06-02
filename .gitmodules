@@ -122,3 +122,6 @@
 [submodule "vim/vim.symlink/bundle/textobj-quoted"]
 	path = vim/vim.symlink/bundle/textobj-quoted
 	url = https://github.com/vim-scripts/vim-textobj-quoted.git
+[submodule "vim/vim.symlink/bundle/textobj-keyvalue"]
+	path = vim/vim.symlink/bundle/textobj-keyvalue
+	url = https://github.com/vimtaku/vim-textobj-keyvalue.git
