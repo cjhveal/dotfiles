@@ -125,3 +125,6 @@
 [submodule "vim/vim.symlink/bundle/textobj-keyvalue"]
 	path = vim/vim.symlink/bundle/textobj-keyvalue
 	url = https://github.com/vimtaku/vim-textobj-keyvalue.git
+[submodule "vim/vim.symlink/bundle/vim-ack"]
+	path = vim/vim.symlink/bundle/vim-ack
+	url = https://github.com/mileszs/ack.vim.git
