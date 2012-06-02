@@ -22,13 +22,13 @@
   * install ack and map to ,a
   * try gundo
   * fugitive bindings
+  * horizontal and vertical resizing
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
 * Ruby
   * automatically detect and configure rbenv/rvm
   * use pp for printing if ap not installed
-  * change irb history file to ruby/
 * Git
   * hitch for pair programming
   * more gitattributes? (use exif for diffing pngs?)
