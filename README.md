@@ -28,15 +28,15 @@ This repository contains my personal configurations.
 ,n - open up filetree
 ,p - fuzzy find a file
 ,b - fuzzy find an open buffer
-,rm - fuzzy find rails models
-,rc - fuzzy find rails controllers
-,rv - fuzzy find rails views
-,rh - fuzzy find rails helpers
-,rl - fuzzy find lib files
-,rs - fuzzy find spec files
-,rC - fuzzy find config files
+,fm - fuzzy find rails models
+,fc - fuzzy find rails controllers
+,fv - fuzzy find rails views
+,fh - fuzzy find rails helpers
+,fl - fuzzy find lib files
+,fs - fuzzy find spec files
+,fC - fuzzy find config files
 
-\-[h/j/k/l] - split buffer in direction specified
+\\-[h/j/k/l] - split buffer in direction specified
 |-[h/j/k/l] - split window in direction specified
 Ctrl-[h/j/k/l] - Move around splits in direction
 ,, - toggle fullscreen for current buffer
