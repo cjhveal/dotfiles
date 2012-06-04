@@ -35,6 +35,7 @@ This repository contains my personal configurations.
 ,fl - fuzzy find lib files
 ,fs - fuzzy find spec files
 ,fC - fuzzy find config files
+gf - open file related to cursor location
 
 \\-[h/j/k/l] - split buffer in direction specified
 |-[h/j/k/l] - split window in direction specified
@@ -47,6 +48,11 @@ Q - intelligently close window
 
 Ctrl-Up - bubble a line up
 Ctrl-Down - bubble a line down
+
+ds - delete surrounding
+cs - change surrounding
+ys - wrap with surrounding
+yS - wrap with surrounding and place on seperate line
 
 ,cf - find git merge conflict markers
 ,. - find last edit location
