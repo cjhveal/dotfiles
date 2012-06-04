@@ -125,6 +125,7 @@
 [submodule "vim/vim.symlink/bundle/textobj-keyvalue"]
 	path = vim/vim.symlink/bundle/textobj-keyvalue
 	url = https://github.com/vimtaku/vim-textobj-keyvalue.git
+  ignore = untracked
 [submodule "vim/vim.symlink/bundle/vim-ack"]
 	path = vim/vim.symlink/bundle/vim-ack
 	url = https://github.com/mileszs/ack.vim.git
@@ -143,6 +144,7 @@
 [submodule "vim/vim.symlink/bundle/show-marks"]
 	path = vim/vim.symlink/bundle/show-marks
 	url = https://github.com/vim-scripts/ShowMarks.git
+  ignore = untracked
 [submodule "vim/vim.symlink/bundle/gundo"]
 	path = vim/vim.symlink/bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
