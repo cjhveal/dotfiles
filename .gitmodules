@@ -4,7 +4,7 @@
 [submodule "vim/vim.symlink/bundle/l9"]
 	path = vim/vim.symlink/bundle/l9
 	url = git://github.com/vim-scripts/L9.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/vim-rails"]
 	path = vim/vim.symlink/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
@@ -20,7 +20,7 @@
 [submodule "vim/vim.symlink/bundle/vim-fuzzyfinder"]
 	path = vim/vim.symlink/bundle/vim-fuzzyfinder
 	url = git://github.com/vim-scripts/FuzzyFinder.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/vim-fugitive"]
 	path = vim/vim.symlink/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -33,7 +33,7 @@
 [submodule "vim/vim.symlink/bundle/zoomwin"]
 	path = vim/vim.symlink/bundle/zoomwin
 	url = git://github.com/vim-scripts/ZoomWin.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/vim-endwise"]
 	path = vim/vim.symlink/bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
@@ -67,21 +67,21 @@
 [submodule "vim/vim.symlink/bundle/vim-arpeggio"]
 	path = vim/vim.symlink/bundle/vim-arpeggio
 	url = https://github.com/kana/vim-arpeggio.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/vim-repeat"]
 	path = vim/vim.symlink/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "vim/vim.symlink/bundle/textobj-user"]
 	path = vim/vim.symlink/bundle/textobj-user
 	url = https://github.com/kana/vim-textobj-user.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/textobj-entire"]
 	path = vim/vim.symlink/bundle/textobj-entire
 	url = git://github.com/kana/vim-textobj-entire.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/textobj-datetime"]
 	path = vim/vim.symlink/bundle/textobj-datetime
-  ignore = untracked
+  ignore = all
 	url = git://github.com/kana/vim-textobj-datetime.git
 [submodule "vim/vim.symlink/bundle/textobj-rubysymbol"]
 	path = vim/vim.symlink/bundle/textobj-rubysymbol
@@ -125,7 +125,7 @@
 [submodule "vim/vim.symlink/bundle/textobj-keyvalue"]
 	path = vim/vim.symlink/bundle/textobj-keyvalue
 	url = https://github.com/vimtaku/vim-textobj-keyvalue.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/vim-ack"]
 	path = vim/vim.symlink/bundle/vim-ack
 	url = https://github.com/mileszs/ack.vim.git
@@ -144,7 +144,7 @@
 [submodule "vim/vim.symlink/bundle/show-marks"]
 	path = vim/vim.symlink/bundle/show-marks
 	url = https://github.com/vim-scripts/ShowMarks.git
-  ignore = untracked
+  ignore = all
 [submodule "vim/vim.symlink/bundle/gundo"]
 	path = vim/vim.symlink/bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
