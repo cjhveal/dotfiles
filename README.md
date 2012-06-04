@@ -51,6 +51,13 @@ Ctrl-Down - bubble a line down
 ,cf - find git merge conflict markers
 ,. - find last edit location
 
+,gs - opens git status and allows you to stage changes
+,gb - opens git blame
+,gc - runs git commit
+,gg - runs git grep
+,gd - runs git diff
+,gl - runs git log
+
 ,vc - execute current line as a vim command
 ,ve - execute entire file as vim command
 ,vr - reload vimrc file
