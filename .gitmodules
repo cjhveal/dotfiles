@@ -140,3 +140,9 @@
 [submodule "vim/vim.symlink/bundle/vim-abolish"]
 	path = vim/vim.symlink/bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "vim/vim.symlink/bundle/show-marks"]
+	path = vim/vim.symlink/bundle/show-marks
+	url = https://github.com/vim-scripts/ShowMarks.git
+[submodule "vim/vim.symlink/bundle/gundo"]
+	path = vim/vim.symlink/bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
