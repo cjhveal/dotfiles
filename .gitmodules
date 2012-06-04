@@ -132,6 +132,7 @@
 [submodule "vim/vim.symlink/bundle/vimux"]
 	path = vim/vim.symlink/bundle/vimux
 	url = https://github.com/benmills/vimux.git
+  ignore = all
 [submodule "vim/vim.symlink/bundle/vim-turbux"]
 	path = vim/vim.symlink/bundle/vim-turbux
 	url = https://github.com/jgdavey/vim-turbux.git
