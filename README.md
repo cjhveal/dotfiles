@@ -42,6 +42,9 @@ Ctrl-[h/j/k/l] - Move around splits in direction
 ,, - toggle fullscreen for current buffer
 Q - intelligently close window
 
+\\\\ - toggle commenting
+\\\\u - uncomment current line and all adjacent comments
+
 Ctrl-Up - bubble a line up
 Ctrl-Down - bubble a line down
 
