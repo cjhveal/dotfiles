@@ -36,8 +36,11 @@ nnoremap <D-"> ci"
 "(v)im (c)ommand - execute current line as a vim command
 nmap <silent> ,vc yy:<C-f>p<C-c><CR>
 
-"(v)im (r)eload
-nmap <silent> ,vr :so %<CR>
+"(v)im (e)xecute - execute the current file as vim script
+nmap <silent> ,ve :so %<CR>
+
+"(v)im (r)eload - reload vimrc
+nmap <silent> ,vr :so ~/.vimrc<CR>
 
 " These are very similar keys. Typing 'a will jump to the line in the current
 " file marked with ma. However, `a will jump to the line and column marked

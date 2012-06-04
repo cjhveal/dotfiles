@@ -49,7 +49,13 @@ Ctrl-Down - bubble a line down
 ,. - find last edit location
 
 ,vc - execute current line as a vim command
-,vr - execute entire file as vim command
+,ve - execute entire file as vim command
+,vr - reload vimrc file
+
+,mt - Toggles ShowMarks on and off.
+,mh - Hides an individual mark.
+,ma - Hides all marks in the current buffer.
+,mm - Places the next available mark.
 
 ,ss - toggle spellcheck
 ,sn - find next spelling errror
@@ -59,6 +65,9 @@ Ctrl-Down - bubble a line down
 
 ,cd - change directory to the current file
 ,d - diff your changes with original file
+
+,t - send test to tmux
+,T - send focused test to tmux
 
 sj - expand single-line expression
 sk - collapse multi-line expression
