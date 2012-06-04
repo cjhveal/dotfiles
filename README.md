@@ -23,7 +23,6 @@ This repository contains my personal configurations.
 6. <code>open ~/.dotfiles/fonts</code> and install all fonts
 
 ### Vim Bindings
-<code>
 ,a - ack
 ,n - open up filetree
 ,p - fuzzy find a file
@@ -98,4 +97,3 @@ f{x} - between two characters x
 {action}in{text-object} - perform action inside next text object
 {action}al{text-object} - perform action around previous text object
 {action}il{text-object} - perform action inside previous  text object
-<code>
