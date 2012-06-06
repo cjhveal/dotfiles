@@ -40,7 +40,7 @@ gf - open file related to cursor location
 \-[h/j/k/l] - split buffer in direction specified
 |-[h/j/k/l] - split window in direction specified
 Ctrl-[h/j/k/l] - Move around splits in direction
-,, - toggle fullscreen for current buffer
+,z - toggle fullscreen for current buffer
 Q - intelligently close window
 
 \\ - toggle commenting
