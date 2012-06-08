@@ -50,3 +50,7 @@ alias localip='ipconfig getifaddr en0'
 alias whois="whois -h whois-servers.net"
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+function murder () {
+  ps | grep $1 | grep -v grep | awk '{print $1}' | xargs kill -9
+}
