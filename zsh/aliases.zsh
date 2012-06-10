@@ -54,3 +54,5 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 function murder () {
   ps | grep $1 | grep -v grep | awk '{print $1}' | xargs kill -9
 }
+
+alias gz='tar -zcvf'
