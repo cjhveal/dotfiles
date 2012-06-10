@@ -19,6 +19,7 @@
 	ca = commit --amend
 	cm = commit --message
   co = checkout
+  cp = cherry-pick
   d = diff --color-words
   ds = diff --staged --color-words
   dd = diff --color-words=.
