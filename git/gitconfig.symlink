@@ -9,53 +9,80 @@
   statusHints = false
 
 [alias]
+  # add
   a = add
   ap = add --patch
-  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
-	authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
-  amend = commit --amend -C HEAD
+
+  aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+
+  # branch
   br = branch
+  cp = cherry-pick
+  diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}"g | sed -ne \"s/^ //p\" | head -1' -
+  track = checkout -t
+  nb = checkout -b
+
+  # commit
+  amend = commit --amend -C HEAD
   c = commit
 	ca = commit --amend
 	cm = commit --message
+	msg = commit --allow-empty -m
+
   co = checkout
-  cp = cherry-pick
-  d = diff --color-words
+
+  # diff
+  d = diff --color-words # diff by word
   ds = diff --staged --color-words
-  dd = diff --color-words=.
+  dd = diff --color-words=. # diff by char
   dds = diff --staged --color-words=.
-  dl = diff
+  dl = diff # diff by line
   dls = diff --staged
-  diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}"g | sed -ne \"s/^ //p\" | head -1' -
+
   h = help
-  l = pull
+
+  # log
+	authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
   lc = log ORIG_HEAD.. --stat --no-merges
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+  # merge
 	m = merge
 	mm = merge --no-ff
-	msg = commit --allow-empty -m
-  nb = checkout -b
+
+  # push/pull
+  l = pull
   p = push
+  sync = !git pull && git push
+
+  # remotes
 	prune-remotes = "!for remote in `git remote`; do git remote prune $remote; done"
-  pup = !git pull && git submodule init && git submodule update
   r = remote
+
+  # rebase
   rb = rebase
   rba = rebase --abort
   rbc = rebase --continue
   rbs = rebase --skip
+
+  # reset
   rh = reset --hard
   rhh = reset HEAD --hard
+	uncommit = reset --soft HEAD^
+  unstage = reset HEAD --
+
+  # status
   s = status --short --branch
+  st = status
+
+  # submodule
 	sm = submodule
 	sma = submodule add
 	smu = submodule update --init
-  st = status
-  sync = !git pull && git push
-  track = checkout -t
-	undo = reset --soft HEAD^
-  unstage = reset HEAD --
+  pup = !git pull && git submodule init && git submodule update
+
 
 [color]
   ui = auto
