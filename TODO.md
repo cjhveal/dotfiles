@@ -26,6 +26,7 @@
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
+  * make lscolors and ls colors define same colorscheme
 * Ruby
   * automatically detect and configure rbenv/rvm
   * use pp for printing if ap not installed
