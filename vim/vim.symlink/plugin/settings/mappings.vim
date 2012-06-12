@@ -14,6 +14,9 @@ nmap Y y$
 " :W should behave like :w
 cnoreabbrev W w
 
+" save file with sudo permissions
+cmap w!! w !sudo tee % >/dev/null
+
 " Move around splits with ctrl+direction
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
