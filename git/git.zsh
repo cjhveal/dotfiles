@@ -35,12 +35,9 @@ alias gsma='git sma'
 alias gsmu='git smu'
 alias gst='git st'
 
-hub_path=$(which hub)
-if [[ -f $hub_path ]]
-then
-  alias git=$hub_path
+if which hub >/dev/null; then
+  eval "$(hub alias -s)"
 fi
-
 # Will return the current branch name
 # Usage example: git pull origin $(current_branch)
 function current_branch() {
