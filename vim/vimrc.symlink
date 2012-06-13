@@ -16,10 +16,6 @@ endif
 " Strip whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Toggle paste
-nnoremap <F6> :set invpaste paste?<CR>
-set pastetoggle=<F6>
-set showmode
 
 " Pathogen Initialization
 " =======================
@@ -36,6 +32,7 @@ call pathogen#helptags()
 let mapleader=','
 let maplocalleader=','
 set encoding=utf-8
+set showmode
 set number                      " Line numbers are good
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history

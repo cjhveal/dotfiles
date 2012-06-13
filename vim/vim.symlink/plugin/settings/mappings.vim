@@ -125,3 +125,16 @@ vmap <C-Up> [egv
 
 " Ack binding
 nmap <leader>a :Ack
+
+nnoremap <Leader>tp :set paste!<CR>
+nnoremap <Leader>tn :call LineNumbers()<CR>
+function! LineNumbers()
+  if &nu
+    set nonu rnu
+  elseif &rnu
+    set nonu nornu
+  else
+    set nornu nu
+  endif
+endfunction
+

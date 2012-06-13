@@ -46,6 +46,12 @@ Q - intelligently close window
 \\ - toggle commenting
 \\u - uncomment current line and all adjacent comments
 
+,tp - toggle paste mode
+,tn - toggle line numbers
+
+,u - open undo tree
+,tt - open tagbar list
+
 Ctrl-Up - bubble a line up
 Ctrl-Down - bubble a line down
 

@@ -8,11 +8,11 @@ nnoremap <C-b> :CtrlPBuffer<CR>
 
 nnoremap <silent> <D-P> :ClearCtrlPCache<CR>
 
-map <leader>rm :CtrlP app/models<CR>
-map <leader>rc :CtrlP app/controllers<CR>
-map <leader>rv :CtrlP app/views<CR>
-map <leader>rh :CtrlP app/helpers<CR>
-map <leader>ra :CtrlP app/assets<CR>
-map <leader>rl :CtrlP lib<CR>
-map <leader>rs :CtrlP spec<CR>
-map <leader>rC :CtrlP config<CR>
+map <leader>fm :CtrlP app/models<CR>
+map <leader>fc :CtrlP app/controllers<CR>
+map <leader>fv :CtrlP app/views<CR>
+map <leader>fh :CtrlP app/helpers<CR>
+map <leader>fa :CtrlP app/assets<CR>
+map <leader>fl :CtrlP lib<CR>
+map <leader>fs :CtrlP spec<CR>
+map <leader>fC :CtrlP config<CR>
