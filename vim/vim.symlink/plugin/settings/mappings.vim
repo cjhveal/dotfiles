@@ -138,3 +138,4 @@ function! LineNumbers()
   endif
 endfunction
 
+cnoremap man help
