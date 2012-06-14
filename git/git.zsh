@@ -33,6 +33,10 @@ alias gs='git s'
 alias gsm='git sm'
 alias gsma='git sma'
 alias gsmu='git smu'
+alias gss='git ss'
+alias gsl='git sl'
+alias gsp='git sp'
+alias gsd='git sd'
 alias gst='git st'
 
 if which hub >/dev/null; then

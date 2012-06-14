@@ -74,6 +74,12 @@
   unstage = reset HEAD --
   unpush = push -f origin HEAD^:master
 
+  # stash
+  ss = stash
+  sl = stash list
+  sp = stash pop
+  sd = stash drop
+
   # status
   s = status --short --branch
   st = status
