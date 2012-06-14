@@ -23,6 +23,7 @@
   * try gundo
   * fugitive bindings
   * horizontal and vertical resizing
+  * learn vim folding
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
