@@ -155,3 +155,9 @@
 [submodule "vim/vim.symlink/bundle/solarized"]
 	path = vim/vim.symlink/bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/vim.symlink/bundle/vim-ruby-refactoring"]
+	path = vim/vim.symlink/bundle/vim-ruby-refactoring
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "vim/vim.symlink/bundle/jellybeans"]
+	path = vim/vim.symlink/bundle/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
