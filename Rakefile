@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :install do
+task :install => [:submodules] do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -34,6 +34,11 @@ task :install do
   end
 end
 
+desc "Init and update submodules."
+task :submodules do
+  sh('git submodule update --init')
+end
+
 task :uninstall do
 
   Dir.glob('**/*.symlink').each do |linkable|
@@ -48,7 +53,7 @@ task :uninstall do
 
     # Replace any backups made during installation
     if File.exists?("#{ENV["HOME"]}/.#{file}.backup")
-      `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"` 
+      `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"`
     end
 
   end
