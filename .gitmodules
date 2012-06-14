@@ -164,3 +164,6 @@
 [submodule "vim/vim.symlink/bundle/vim-autoclose"]
 	path = vim/vim.symlink/bundle/vim-autoclose
 	url = https://github.com/Townk/vim-autoclose.git
+[submodule "vim/vim.symlink/bundle/vim-tomorrow-theme"]
+	path = vim/vim.symlink/bundle/vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
