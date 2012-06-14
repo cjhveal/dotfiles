@@ -72,6 +72,7 @@
   rhh = reset HEAD --hard
 	uncommit = reset --soft HEAD^
   unstage = reset HEAD --
+  unpush = push -f origin HEAD^:master
 
   # status
   s = status --short --branch
@@ -83,6 +84,8 @@
 	smu = submodule update --init
   pup = !git pull && git submodule init && git submodule update
 
+[apply]
+  whitespace = fix
 
 [color]
   ui = auto
