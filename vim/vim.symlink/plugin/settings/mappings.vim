@@ -123,9 +123,6 @@ map <C-Up> [e
 vmap <C-Down> ]egv
 vmap <C-Up> [egv
 
-" Ack binding
-nmap <leader>a :Ack<space>
-
 nnoremap <Leader>tp :set paste!<CR>
 nnoremap <Leader>tn :call LineNumbers()<CR>
 function! LineNumbers()
