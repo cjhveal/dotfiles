@@ -6,24 +6,15 @@
   * bootstrap script (set shell to zsh, install packages)
   * create a dev branch and use master as a stable release
 * Vim
-  * fix vim colorscheme (modified solarize? tomorrow-night?)
+  * use CmdT if vim compiled with ruby, default CtrlP
   * canabalize old vim-rc for any missed behaviours
   * Fix command to reload vimrc (,vr just reloads current file)
-  * Add keybinding for paste mode
-  * find good gq alias
   * set up wrapping in text files and markdown
-  * set vim to use normal regexes? (/v after all search)
   * investigate vundle
   * use QQ to quit intelligently, Q! to quit without saving
-  * add json syntax highlighting (?)
-  * ctags?
-  * make nerdtree unaffected by | splits
   * vim templates?
-  * install ack and map to ,a
-  * try gundo
-  * fugitive bindings
   * horizontal and vertical resizing
-  * learn vim folding
+  * investigate vim folding
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
