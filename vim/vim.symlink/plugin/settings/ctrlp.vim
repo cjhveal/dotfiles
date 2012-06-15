@@ -4,7 +4,6 @@ let g:ctrlp_by_filename = 1
 let g:ctrlp_map = ',p'
 
 nnoremap ,b :CtrlPBuffer<CR>
-nnoremap <C-b> :CtrlPBuffer<CR>
 
 nnoremap <silent> <D-P> :ClearCtrlPCache<CR>
 
