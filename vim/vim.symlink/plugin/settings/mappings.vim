@@ -14,6 +14,9 @@ nmap Y y$
 " :W should behave like :w
 cnoreabbrev W w
 
+" allows saving with ;w;
+cnoremap w; w<CR>
+
 " save file with sudo permissions
 cmap w!! w !sudo tee % >/dev/null
 
@@ -101,6 +104,7 @@ nmap \j  :rightbelow new<CR>
 
 " alias ; to :
 nnoremap ; :
+vnoremap ; :
 
 " allow deleting without updating the clipboard (yank buffer)
 nnoremap x "_x
@@ -135,4 +139,19 @@ function! LineNumbers()
   endif
 endfunction
 
+" I always type man when i mean help
 cnoremap man help
+
+" Yank entire buffer with gy
+nmap gy :%y+<cr>
+
+" C/M/D-d/f moves up/down a page
+" think j/k on left hand
+nmap <C-d> <C-b>
+if has("gui_macvim")
+  nmap <D-f> <C-f>
+  nmap <D-d> <C-b>
+else
+  nmap <M-f> <C-f>
+  nmap <M-d> <C-b>
+endif
