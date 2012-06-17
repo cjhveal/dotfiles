@@ -48,6 +48,7 @@ Q - intelligently close window
 
 ,tp - toggle paste mode
 ,tn - toggle line numbers
+,ig - toggle indent guides
 
 ,u - open undo tree
 ,tt - open tagbar list
@@ -55,10 +56,6 @@ Q - intelligently close window
 Ctrl-Up - bubble a line up
 Ctrl-Down - bubble a line down
 
-ds - delete surrounding
-cs - change surrounding
-ys - wrap with surrounding
-yS - wrap with surrounding and place on seperate line
 
 ,cf - find git merge conflict markers
 ,. - find last edit location
@@ -88,12 +85,13 @@ yS - wrap with surrounding and place on seperate line
 ,cd - change directory to the current file
 ,d - diff your changes with original file
 
-,t - send test to tmux
-,T - send focused test to tmux
-
 sj - expand single-line expression
 sk - collapse multi-line expression
 
+ds - delete surrounding
+cs - change surrounding
+ys - wrap with surrounding
+yS - wrap with surrounding and place on seperate line
 ,# - Surround a word / selection with #{ruby interpolation}
 ," - Surround a word / selection with "quotes"
 ,' - Surround a word / selection with 'single quotes'

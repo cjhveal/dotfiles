@@ -167,3 +167,6 @@
 [submodule "vim/vim.symlink/bundle/vim-tomorrow-theme"]
 	path = vim/vim.symlink/bundle/vim-tomorrow-theme
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "vim/vim.symlink/bundle/vim-indent-guides"]
+	path = vim/vim.symlink/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
