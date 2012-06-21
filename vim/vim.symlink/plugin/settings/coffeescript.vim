@@ -1,1 +1,1 @@
-au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
+" au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
