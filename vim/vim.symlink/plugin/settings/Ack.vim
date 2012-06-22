@@ -1,4 +1,4 @@
-nmap g/ :Ack!<space>
+nmap g/ :Ack!<space>"<left>"
 nmap g* :Ack! -w <C-R><C-W><space>
 nmap ga :AckAdd!<space>
 nmap gn :cnext<CR>
