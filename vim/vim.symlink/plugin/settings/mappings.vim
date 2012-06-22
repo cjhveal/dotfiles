@@ -30,7 +30,7 @@ nnoremap <c-l> <c-w>l
 nmap <silent> <leader>cf <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
 " clear search highlighting when hitting enter
-nnoremap <CR> :nohlsearch<CR>
+nnoremap <leader><space> :nohlsearch<CR>
 
 "Go to last edit location with ,.
 nnoremap ,. '.
