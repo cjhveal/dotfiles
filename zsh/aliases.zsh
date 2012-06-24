@@ -59,7 +59,7 @@ done
 alias mksshkey="ssh-keygen -b 8192 -t rsa -C '$1' -f ~/.ssh/$1.rsa"
 
 function murder () {
-  ps | grep $1 | grep -v grep | awk '{print $1}' | xargs kill -9
+  ps aux | grep $1 | grep -v grep | awk '{print $2}' | xargs kill -9
 }
 
 alias gz='tar -zcvf'
