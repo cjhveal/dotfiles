@@ -155,3 +155,6 @@ else
   nmap <M-f> <C-f>
   nmap <M-d> <C-b>
 endif
+
+" camelCase => camel_case
+vnoremap <silent> <Leader>c :s/\v\C(([a-z]+)([A-Z]))/\2_\l\3/g<CR>
