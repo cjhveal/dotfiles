@@ -9,6 +9,10 @@ let g:surround_35  = "#{\r}"   " #
 let g:surround_45 = "<% \r %>"    " -
 let g:surround_61 = "<%= \r %>"   " =
 
+" Add $ as a jQuery surround, _ for Underscore.js
+autocmd FileType javascript let b:surround_36 = "$(\r)"
+                        \ | let b:surround_95 = "_(\r)"
+
 " Surround plugin shortcuts
 " =========================
 " ,# Surround a word with #{ruby interpolation}
