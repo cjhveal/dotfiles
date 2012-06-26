@@ -1,5 +1,5 @@
 # Load module shared by all prompts
-load File.dirname(__FILE__) + '/.dotfiles/irb/rubyrc.rb'
+load File.dirname(__FILE__) + '/.dotfiles/ruby/rubyrc.rb'
 include RubyRC
 
 # Use AwesomePrint if avaiable
