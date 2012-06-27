@@ -28,3 +28,35 @@ module RubyRC
     content
   end
 end
+
+class Object
+  # Lists methods on class excluding those defined by parent classes
+  def local_methods(obj = self)
+    (obj.methods - obj.class.superclass.instance_methods).sort
+  end
+
+# open documentation
+# ri 'Array#pop' or Array.ri :pop
+  def ri(method = nil)
+    unless method && method =~ /^[A-Z]/ # if class isn't specified
+      klass = self.kind_of?(Class) ? name : self.class.name
+      method = [klass, method].compact.join('#')
+    end
+    puts `ri '#{method}'`
+  end
+end
+
+# === CONVENIENCE METHODS ===
+# Stolen from https://gist.github.com/807492
+# Use Array.toy or Hash.toy to get an array or hash to play with
+class Array
+  def self.toy(n=10, &block)
+    block_given? ? Array.new(n,&block) : Array.new(n) {|i| i+1}
+  end
+end
+
+class Hash
+  def self.toy(n=10)
+    Hash[Array.toy(n).zip(Array.toy(n){|c| (96+(c+1)).chr})]
+  end
+end
