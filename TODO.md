@@ -7,7 +7,7 @@
   * create a dev branch and use master as a stable release
 * Vim
   * use CmdT if vim compiled with ruby, default CtrlP
-  * canabalize old vim-rc for any missed behaviours
+  * canabalize old vimfiles for any missed behaviours and destroy repo
   * Fix command to reload vimrc (,vr just reloads current file)
   * set up wrapping in text files and markdown
   * investigate vundle
@@ -18,6 +18,7 @@
   * haskel: vim-syntax-haskell-cabal and haskellmode-vim
   * colorschemes: Atom and badwolf
   * getting things done (gtd) plugin
+  * investigate snippets
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
@@ -31,7 +32,7 @@
   * more gitattributes? (use exif for diffing pngs?)
   * make a git template with hooks (see cypher)
 * Install
-  * look into thorfiles for instalation (see gabebew/tasks)
+  * look into thorfiles for instalation (see gabebw/tasks)
   * information on how to install this repo
   * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
 * Other
