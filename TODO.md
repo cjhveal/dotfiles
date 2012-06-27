@@ -16,7 +16,6 @@
   * horizontal and vertical resizing
   * investigate vim folding
   * haskel: vim-syntax-haskell-cabal and haskellmode-vim
-  * colorschemes: Atom and badwolf
   * getting things done (gtd) plugin
   * investigate snippets
 * ZSH
