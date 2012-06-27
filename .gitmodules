@@ -176,3 +176,6 @@
 [submodule "vim/vim.symlink/bundle/badwolf"]
 	path = vim/vim.symlink/bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
+[submodule "vim/vim.symlink/bundle/vim-outliner"]
+	path = vim/vim.symlink/bundle/vim-outliner
+	url = https://github.com/vimoutliner/vimoutliner.git
