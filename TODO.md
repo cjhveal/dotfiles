@@ -1,6 +1,7 @@
 # TODO
 * OS X
   * get latest version of hacker defaults osx script
+  * investigate using iTerm2
 * Meta
   * include default packages list to load (brews/gems)
   * bootstrap script (set shell to zsh, install packages)
