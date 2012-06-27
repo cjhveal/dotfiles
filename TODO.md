@@ -41,3 +41,4 @@
   * toprc ?!
   * what is tig? (see mattly)
   * com.apple.Terminal.plist? (see mitsuhiko)
+  * see cypher/bin (git-wtf, git-churn, git-up, url-monitor, vname, browser)
