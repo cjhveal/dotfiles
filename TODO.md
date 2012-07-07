@@ -6,6 +6,7 @@
   * include default packages list to load (brews/gems)
   * bootstrap script (set shell to zsh, install packages)
   * create a dev branch and use master as a stable release
+  * rake file writes env variable with full path of dotfiles
 * Vim
   * use CmdT if vim compiled with ruby, default CtrlP
   * canabalize old vimfiles for any missed behaviours and destroy repo
