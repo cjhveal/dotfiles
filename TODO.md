@@ -20,6 +20,7 @@
   * haskel: vim-syntax-haskell-cabal and haskellmode-vim
   * getting things done (gtd) plugin
   * investigate snippets
+  * set up abolish to fix common spelling mistakes
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
