@@ -55,7 +55,7 @@ crt - toggle word between Class and tables form
 crs - coerce word to snake_case
 crm - coerce word to MixedCase
 cru - coerce word to UPPER_CASE
-crc - coerce word to camel_case
+crc - coerce word to camelCase
 
 ,a/ - align on pattern
 ,as - align on symbols
