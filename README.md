@@ -24,7 +24,6 @@ This repository contains my personal configurations.
 
 ### Vim Bindings
 <pre>
-,a - ack
 ,n - open up filetree
 ,p - fuzzy find a file
 ,b - fuzzy find an open buffer
@@ -40,11 +39,38 @@ gf - open file related to cursor location
 \-[h/j/k/l] - split buffer in direction specified
 |-[h/j/k/l] - split window in direction specified
 Ctrl-[h/j/k/l] - Move around splits in direction
-,z - toggle fullscreen for current buffer
+,z - toggle fullscreen for current window
+;w; - save file
 Q - intelligently close window
+
+,rr - rails related file
+,ra - rails alternate file
+,rp - extract selected lines into partial
 
 \\ - toggle commenting
 \\u - uncomment current line and all adjacent comments
+
+crl - toggle word between singular/plural form
+crt - toggle word between Class and tables form
+crs - coerce word to snake_case
+crm - coerce word to MixedCase
+cru - coerce word to UPPER_CASE
+crc - coerce word to camel_case
+
+,a/ - align on pattern
+,as - align on symbols
+,ah - align a hash
+,ac - align into chunks
+,ao - align options hashes
+,a<space> - quick tabularize
+
+g/ - Ack for pattern
+g* - Ack for word under cursor
+ga - Ack and append to list
+gn - view next match
+gp - view previous match
+gq - close match list
+gl - show match list
 
 ,tp - toggle paste mode
 ,tn - toggle line numbers
@@ -108,7 +134,7 @@ c - comment
 ? - match to last search backward
 da - any datetime object
 df - full date and time
-dd - date (YYYY or YYYY-MM, etc)
+dd - date (YYYY or YYYY-MM, etc) 1992-05 10:42
 dt - time (HH:MM, etc)
 dz - timezone indicator
 e - entire buffer
@@ -121,6 +147,7 @@ r - ruby block
 : - ruby symbol
 q - quoted text, wrapped with '/"/(/{
 u - url
+t - html tag block <p>>inner</p>
 f{x} - between two characters x
 
 {action}an{text-object} - perform action around next text object
