@@ -1,4 +1,5 @@
 alias ga='git a'
+alias gaa='git aa'
 alias gap='git ap'
 alias gbr='git br'
 alias gc='git c'

@@ -11,6 +11,7 @@
 [alias]
   # add
   a = add
+  aa = add --all
   ap = add --patch
 
   aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
