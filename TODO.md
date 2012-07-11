@@ -1,12 +1,14 @@
 # TODO
-* OS X
-  * get latest version of hacker defaults osx script
-  * investigate using iTerm2
 * Meta
+  * throw out configurations and rebuild from scratch
   * include default packages list to load (brews/gems)
   * bootstrap script (set shell to zsh, install packages)
   * create a dev branch and use master as a stable release
   * rake file writes env variable with full path of dotfiles
+* Install
+  * look into thorfiles for instalation (see gabebw/tasks)
+  * information on how to install this repo
+  * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
 * Vim
   * use CmdT if vim compiled with ruby, default CtrlP
   * canabalize old vimfiles for any missed behaviours and destroy repo
@@ -21,6 +23,8 @@
   * getting things done (gtd) plugin
   * investigate snippets
   * set up abolish to fix common spelling mistakes
+  * set up vimux and turbux for short TDD cycles
+  * why is vim returning status code 1 when used with git
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
@@ -33,10 +37,12 @@
   * hitch for pair programming
   * more gitattributes? (use exif for diffing pngs?)
   * make a git template with hooks (see cypher)
-* Install
-  * look into thorfiles for instalation (see gabebw/tasks)
-  * information on how to install this repo
-  * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
+* OS X
+  * get latest version of hacker defaults osx script
+  * investigate using iTerm2
+* Tmux
+  * remove tmux config and understand defaults
+  * after basic understanding start to customize
 * Other
   * inputrc and editrc to use vim bindings in all inputs!
   * irssi config (cloudhead)
