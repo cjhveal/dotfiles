@@ -154,3 +154,10 @@ else
   nmap <M-f> <C-f>
   nmap <M-d> <C-b>
 endif
+
+" Keep searches in the middle of screen
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" Open a quickfix window with the last search
+nnoremap <silent> <leader>? :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
