@@ -161,3 +161,7 @@ nnoremap N Nzzzv
 
 " Open a quickfix window with the last search
 nnoremap <silent> <leader>? :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
+
+" ctags
+nnoremap <silent> <leader>ct :!ctags -R *<CR>
+nnoremap <leader>rt  :!bundle exec rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
