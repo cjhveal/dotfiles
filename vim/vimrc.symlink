@@ -111,6 +111,16 @@ set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visual
 set nowrap                            " Don't wrap lines
 set linebreak                         " Wrap lines at convenient points
 
+" show cursor line for current window in normal mode
+set cursorline
+augroup cline
+    au!
+    au WinEnter * set cursorline
+    au WinLeave * set nocursorline
+    au InsertEnter * set nocursorline
+    au InsertLeave * set cursorline
+augroup END
+
 " Folds
 " =====
 
