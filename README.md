@@ -83,10 +83,6 @@ gl - show quickfix list
 ,u - open undo tree
 ,tt - open tagbar list
 
-Ctrl-Up - bubble a line up
-Ctrl-Down - bubble a line down
-
-
 ,cf - find git merge conflict markers
 ,. - find last edit location
 
