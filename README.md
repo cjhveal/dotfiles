@@ -36,8 +36,8 @@ This repository contains my personal configurations.
 ,fC - fuzzy find config files
 gf - open file related to cursor location
 
-\-[h/j/k/l] - split buffer in direction specified
-|-[h/j/k/l] - split window in direction specified
+\-[h/j/k/l] - split window in direction specified
+|-[h/j/k/l] - split tab in direction specified
 Ctrl-[h/j/k/l] - Move around splits in direction
 ,z - toggle fullscreen for current window
 ;w; - save file
