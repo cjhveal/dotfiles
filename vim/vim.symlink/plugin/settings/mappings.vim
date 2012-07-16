@@ -46,7 +46,7 @@ nmap <silent> ,vc yy:<C-f>p<C-c><CR>
 nmap <silent> ,ve :so %<CR>
 
 "(v)im (r)eload - reload vimrc
-nmap <silent> ,vr :so ~/.vimrc<CR>
+nmap <silent> ,vr :so $MYVIMRC<CR>
 
 " These are very similar keys. Typing 'a will jump to the line in the current
 " file marked with ma. However, `a will jump to the line and column marked
