@@ -30,6 +30,7 @@
   * what is zvm? what is fasd?
   * make lscolors and ls colors define same colorscheme
   * boot into tmux on start
+  * set $EDITOR to vim
 * Ruby
   * automatically detect and configure rbenv/rvm
   * use pp for printing if ap not installed
