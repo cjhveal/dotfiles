@@ -67,10 +67,14 @@ crc - coerce word to camelCase
 g/ - Ack for pattern
 g* - Ack for word under cursor
 ga - Ack and append to list
-gn - view next match
-gp - view previous match
-gq - close match list
-gl - show match list
+
+,<space> - clear search highlighting
+,? - open last search in quickfix
+
+gn - view next quickfix match
+gp - view previous quickfix match
+gq - close quickfix list
+gl - show quickfix list
 
 ,tp - toggle paste mode
 ,tn - toggle line numbers
