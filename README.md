@@ -155,5 +155,5 @@ f{x} - between two characters x
 {action}an{text-object} - perform action around next text object
 {action}in{text-object} - perform action inside next text object
 {action}al{text-object} - perform action around previous text object
-{action}il{text-object} - perform action inside previous  text object
+{action}il{text-object} - perform action inside previous text object
 </pre>
