@@ -118,7 +118,6 @@ vnoremap / /\v
 nnoremap ? ?\v
 vnoremap ? ?\v
 
-
 " Move current line down/up
 map <C-Down> ]e
 map <C-Up> [e
