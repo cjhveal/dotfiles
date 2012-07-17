@@ -24,7 +24,7 @@
   * investigate snippets
   * set up abolish to fix common spelling mistakes
   * set up vimux and turbux for short TDD cycles
-  * why is vim returning status code 1 when used with git
+  * get jade syntax highlighting plugin
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
