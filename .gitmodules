@@ -182,3 +182,6 @@
 [submodule "vim/vim.symlink/bundle/supertab"]
 	path = vim/vim.symlink/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "vim/vim.symlink/bundle/vim-css-color"]
+	path = vim/vim.symlink/bundle/vim-css-color
+	url = https://github.com/ap/vim-css-color.git
