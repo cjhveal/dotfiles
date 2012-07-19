@@ -10,7 +10,7 @@
   * information on how to install this repo
   * split modules of the dotfiles into rake tasks (eg. zsh, vim, ruby)
 * Vim
-  * use CmdT if vim compiled with ruby, default CtrlP
+  * use CmdT if vim compiled with ruby, default CtrlP (see vim/dotvim)
   * canabalize old vimfiles for any missed behaviours and destroy repo
   * Fix command to reload vimrc (,vr just reloads current file)
   * set up wrapping in text files and markdown
@@ -24,7 +24,10 @@
   * investigate snippets
   * set up abolish to fix common spelling mistakes
   * set up vimux and turbux for short TDD cycles
-  * get jade syntax highlighting plugin
+  * get jade and handlebars syntax highlighting plugin
+  * what about cscope?
+  * tpope's speeddating ?
+  * why does markdown take so long to open in the terminal?
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
