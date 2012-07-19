@@ -179,9 +179,6 @@
 [submodule "vim/vim.symlink/bundle/vim-outliner"]
 	path = vim/vim.symlink/bundle/vim-outliner
 	url = https://github.com/vimoutliner/vimoutliner.git
-[submodule "vim/vim.symlink/bundle/vim-css-color"]
-	path = vim/vim.symlink/bundle/vim-css-color
-	url = https://github.com/skammer/vim-css-color.git
 [submodule "vim/vim.symlink/bundle/supertab"]
 	path = vim/vim.symlink/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
