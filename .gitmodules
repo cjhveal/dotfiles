@@ -185,3 +185,6 @@
 [submodule "vim/vim.symlink/bundle/vim-css-color"]
 	path = vim/vim.symlink/bundle/vim-css-color
 	url = https://github.com/ap/vim-css-color.git
+[submodule "vim/vim.symlink/bundle/vim-jade"]
+	path = vim/vim.symlink/bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
