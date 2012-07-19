@@ -74,6 +74,8 @@ au BufRead,BufNewFile *.hbs set filetype=mustache
 
 set incsearch        " Find the next match as we type the search
 set hlsearch         " Hilight searches by default
+set ignorecase       " Ignore case ...
+set smartcase        " Unless search contains a capital letter
 set viminfo='100,f1  " Save up to 100 marks, enable capital marks
 
 " Turn Off Swap Files
