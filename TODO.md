@@ -27,7 +27,6 @@
   * get jade and handlebars syntax highlighting plugin
   * what about cscope?
   * tpope's speeddating ?
-  * why does markdown take so long to open in the terminal?
 * ZSH
   * zsh completions and learn about zsh functions
   * what is zvm? what is fasd?
