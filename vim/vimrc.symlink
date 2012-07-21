@@ -90,7 +90,7 @@ set nowritebackup
 
 " Keep undo history across sessions, by storing in file
 " Only works in MacVim (gui) mode
-if has('gui_running')
+if has('persistent_undo')
   set undodir=~/.vim/backups
   set undofile
 endif
