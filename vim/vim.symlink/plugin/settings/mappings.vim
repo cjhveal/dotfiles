@@ -171,3 +171,6 @@ map <leader>t g<C-]>
 
 map <F1> <Esc>
 imap <F1> <Esc>
+
+" find help for word under cursor
+nnoremap <Leader>h :help <C-R><C-W><CR>
