@@ -20,6 +20,9 @@ cnoremap w; w<CR>
 " save file with sudo permissions
 cmap w!! w !sudo tee % >/dev/null
 
+" return current opened file's dirctory
+cnoremap %% <C-R>=expand('%:h').'/'<CR>
+
 " Move around splits with ctrl+direction
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
