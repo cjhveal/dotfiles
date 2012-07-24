@@ -141,9 +141,6 @@ function! LineNumbers()
   endif
 endfunction
 
-" I always type man when i mean help
-cnoremap man help
-
 " Yank entire buffer with gy
 nmap gy :%y+<cr>
 
