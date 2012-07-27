@@ -46,7 +46,7 @@ Q - intelligently close window
 ,rr - rails related file
 ,ra - rails alternate file
 ,rp - extract selected lines into partial
-,rt - generate tags for rails app
+,rct - generate tags for rails app
 
 \\ - toggle commenting
 \\u - uncomment current line and all adjacent comments
