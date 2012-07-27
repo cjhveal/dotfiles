@@ -174,3 +174,7 @@ imap <F1> <Esc>
 
 " find help for word under cursor
 nnoremap <Leader>h :help <C-R><C-W><CR>
+
+" H and L to jump to start and end of line.
+nnoremap H ^
+nnoremap L g_
