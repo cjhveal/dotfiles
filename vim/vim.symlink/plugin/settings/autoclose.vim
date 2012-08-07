@@ -1,4 +1,4 @@
-let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}', '|':'|' }
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '|':'|' }
 let g:AutoCloseProtectedRegions = ["Character"]
 
 if !has("gui_running")
