@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :install => [:submodules] do
+task :symlink => [:submodules] do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -38,6 +38,9 @@ desc "Init and update submodules."
 task :submodules do
   sh('git submodule update --init')
 end
+
+desc "Install .dotfiles painlessly"
+task :install => [:symlink, :submodules]
 
 task :uninstall do
 
