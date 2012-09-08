@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :symlink => [:submodules] do
+task :symlink => [:vim_bundle] do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -34,13 +34,13 @@ task :symlink => [:submodules] do
   end
 end
 
-desc "Init and update submodules."
-task :submodules do
-  sh('git submodule update --init')
+desc "Bundle Install vim plugins"
+task :vim_bundle do
+  system('vim +BundleInstall +qall')
 end
 
 desc "Install .dotfiles painlessly"
-task :install => [:symlink, :submodules]
+task :install => [:symlink, :vim_bundle]
 
 task :uninstall do
 
