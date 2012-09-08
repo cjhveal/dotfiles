@@ -20,14 +20,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
 
-" Pathogen Initialization
-" =======================
+" Vundles
+" =======
+source ~/.vim/bundles.vim
 
-" This loads all the plugins in ~/.vim/bundle
-" Use tpope's pathogen plugin to manage all other plugins
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
 
 " General Config
 " ==============
