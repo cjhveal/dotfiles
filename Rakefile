@@ -36,7 +36,8 @@ end
 
 desc "Bundle Install vim plugins"
 task :vim_bundle do
-  system('vim +BundleInstall +qall')
+  system('git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle')
+  system('vim --noplugins -u ~/.vim/bundles.vim +BundleInstall +qall')
 end
 
 desc "Install .dotfiles painlessly"
