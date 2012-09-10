@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 
 
 Bundle 'kana/vim-arpeggio'
+Bundle 'tpope/vim-abolish'
 Bundle 'Townk/vim-autoclose'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-commentary'
