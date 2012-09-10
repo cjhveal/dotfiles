@@ -6,6 +6,12 @@ Run the following in your shell:
 
   `git clone https://cjhveal@github.com/cjhveal/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && rake install`
 
+### Updating
+Run `rake` in the `.dotfiles` directory.
+
+### Uninstalling
+Run `rake uninstall` in the `.dotfiles` directory.
+
 ### Vim Bindings
     ,n - open up filetree
     ,p - fuzzy find a file
