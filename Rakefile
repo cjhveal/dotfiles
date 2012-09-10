@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :symlink => [:vim_bundle] do
+task :symlink do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -34,15 +34,37 @@ task :symlink => [:vim_bundle] do
   end
 end
 
-desc "Bundle Install vim plugins"
-task :vim_bundle do
-  system('git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle')
-  system('vim --noplugins -u ~/.vim/bundles.vim +BundleInstall +qall')
+desc 'Changes the default shell to zsh'
+task :zsh do
+  puts 'Changing default shell to zsh (needs password):'
+  `chsh -s $(which zsh)`
 end
 
-desc "Install .dotfiles painlessly"
-task :install => [:symlink, :vim_bundle]
+desc 'install fonts'
+task :fonts do
+  puts "Installing fonts"
+  `cp ~/.dotfiles/fonts/* ~/Library/Fonts`
+end
 
+desc "Updating from git origin"
+task :git_pull do
+  puts `cd ~/.dotfiles && git pull`
+end
+
+desc "Bundle Install vim plugins"
+task :vim_bundle do
+  system('git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle') unless File.exists? "#{ENV['HOME']}/.vim/bundle/vundle"
+  system('vim --noplugin -u ~/.vim/bundles.vim +BundleInstall +qall')
+end
+
+
+desc "Install .dotfiles painlessly"
+task :install => [:symlink, :fonts, :vim_bundle, :zsh]
+
+desc "Update .dotfiles"
+task :update => [:git_pull, :fonts, :vim_bundle]
+
+desc "Uninstall .dotfiles"
 task :uninstall do
 
   Dir.glob('**/*.symlink').each do |linkable|
@@ -63,4 +85,4 @@ task :uninstall do
   end
 end
 
-task :default => 'install'
+task :default => 'update'
