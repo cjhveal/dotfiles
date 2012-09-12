@@ -178,3 +178,5 @@ nnoremap <Leader>h :help <C-R><C-W><CR>
 " H and L to jump to start and end of line.
 nnoremap H ^
 nnoremap L g_
+
+nnoremap - :Switch<cr>
