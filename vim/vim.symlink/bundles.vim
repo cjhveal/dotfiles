@@ -30,6 +30,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'bronson/vim-visual-star-search'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'AndrewRadev/switch.vim'
+Bundle 'ervandew/supertab'
 
 " Syntaxes
 Bundle 'kchmck/vim-coffee-script'
