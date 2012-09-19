@@ -4,7 +4,7 @@ This repository contains my personal configurations.
 ### INSTALL INSTRUCTIONS
 Run the following in your shell:
 
-  `git clone https://cjhveal@github.com/cjhveal/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && rake install`
+  `git clone https://github.com/cjhveal/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && rake install`
 
 ### Updating
 Run `rake` in the `.dotfiles` directory.
