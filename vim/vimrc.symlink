@@ -135,6 +135,7 @@ set wildmenu                    " Enable ctrl-n and ctrl-p to scroll thru matche
 set wildignore=*.o,*.obj,*~     " Stuff to ignore when tab completing
 set wildignore+=*vim/backups*
 set wildignore+=*.jpg,*.png,*.xpm,*.gif,*.pdf
+let g:neocomplcache_enable_at_startup = 1
 
 " Scrolling
 " =========

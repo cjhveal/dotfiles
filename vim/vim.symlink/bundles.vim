@@ -31,6 +31,12 @@ Bundle 'bronson/vim-visual-star-search'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'ervandew/supertab'
+Bundle 'Shougo/neocomplcache'
+Bundle 'lukerandall/haskellmode-vim'
+Bundle 'eagletmt/ghcmod-vim'
+Bundle 'Shougo/vimproc'
+Bundle 'ujihisa/neco-ghc'
+Bundle 'scrooloose/syntastic'
 
 " Syntaxes
 Bundle 'kchmck/vim-coffee-script'

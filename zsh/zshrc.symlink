@@ -31,4 +31,4 @@ if which rbenv &> /dev/null; then
   eval "$(rbenv init -)"
 fi
 
-export PATH="/usr/local/bin:/user/local/sbin:$ZSH/bin:$PATH"
+export PATH="/usr/local/bin:/user/local/sbin:$HOME/.cabal/bin:$ZSH/bin:$PATH"
