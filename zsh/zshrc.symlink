@@ -21,12 +21,12 @@ compinit
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
 
-if which npm &> /dev/null; then
+if [[ -d "$HOME/node_modules/.bin" ]]; then
   export PATH="$HOME/node_modules/.bin:$PATH"
 fi
 
 # load rbenv if installed
-if which rbenv &> /dev/null; then
+if [[ -d "$HOME/.rbenv" ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
