@@ -37,6 +37,7 @@ Bundle 'eagletmt/ghcmod-vim'
 Bundle 'Shougo/vimproc'
 Bundle 'ujihisa/neco-ghc'
 Bundle 'scrooloose/syntastic'
+Bundle 'mileszs/ack.vim'
 
 " Syntaxes
 Bundle 'kchmck/vim-coffee-script'
