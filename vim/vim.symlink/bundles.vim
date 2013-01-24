@@ -38,6 +38,7 @@ Bundle 'Shougo/vimproc'
 Bundle 'ujihisa/neco-ghc'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
+Bundle 'vim-scripts/SearchComplete'
 
 " Syntaxes
 Bundle 'kchmck/vim-coffee-script'
