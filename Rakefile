@@ -51,18 +51,23 @@ task :git_pull do
   puts `cd ~/.dotfiles && git pull`
 end
 
-desc "Bundle Install vim plugins"
-task :vim_bundle do
+desc "Bootstrap and Bundle Install vim plugins"
+task :vim_bundle_install do
   system('git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle') unless File.exists? "#{ENV['HOME']}/.vim/bundle/vundle"
   system('vim --noplugin -u ~/.vim/bundles.vim +BundleInstall +qall')
 end
 
+desc "Update vim plugins"
+task :vim_bundle_update do
+  system('vim --noplugin -u ~/.vim/bundles.vim +BundleInstall! +qall')
+end
+
 
 desc "Install .dotfiles painlessly"
-task :install => [:symlink, :fonts, :vim_bundle, :zsh]
+task :install => [:symlink, :fonts, :vim_bundle_install, :zsh]
 
 desc "Update .dotfiles"
-task :update => [:git_pull, :fonts, :vim_bundle]
+task :update => [:git_pull, :fonts, :vim_bundle_update]
 
 desc "Uninstall .dotfiles"
 task :uninstall do
