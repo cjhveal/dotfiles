@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+query = ARGV.join('+').squeeze.tr(' ', '+')
+`open http://www.google.com/search?q=#{query}`
