@@ -69,4 +69,6 @@ Bundle 'vim-scripts/vim-textobj-quoted'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bootleq/vim-textobj-rubysymbol'
 Bundle 'mattn/vim-textobj-url'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'vim-scripts/argtextobj.vim'
 
