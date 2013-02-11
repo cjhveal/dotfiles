@@ -138,7 +138,7 @@ Run `rake uninstall` in the `.dotfiles` directory.
     : - ruby symbol
     q - quoted text, wrapped with '/"/(/{
     u - url
-    t - html tag block <p>>inner</p>
+    t - html tag block <p>inner</p>
     f{x} - between two characters x
 
     {action}an{text-object} - perform action around next text object
