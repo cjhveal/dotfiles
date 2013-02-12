@@ -18,6 +18,7 @@
 
   # branch
   br = branch
+  branches = branch -av
   cp = cherry-pick
   diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}"g | sed -ne \"s/^ //p\" | head -1' -
   track = checkout -t
