@@ -53,6 +53,8 @@
   # merge
 	m = merge
 	mm = merge --no-ff
+  ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
+  theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 
   # push/pull
   l = pull
@@ -81,6 +83,7 @@
   sl = stash list
   sp = stash pop
   sd = stash drop
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 
   # status
   s = status --short --branch
@@ -91,6 +94,12 @@
 	sma = submodule add
 	smu = submodule update --init
   pup = !git pull && git submodule init && git submodule update
+
+  # file level ignoring
+  assume   = update-index --assume-unchanged
+  unassume = update-index --no-assume-unchanged
+  assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+
 
 [apply]
   whitespace = fix
