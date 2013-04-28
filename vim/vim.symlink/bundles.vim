@@ -71,4 +71,5 @@ Bundle 'bootleq/vim-textobj-rubysymbol'
 Bundle 'mattn/vim-textobj-url'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'vim-scripts/argtextobj.vim'
+Bundle 'fsouza/go.vim'
 
