@@ -1,5 +1,6 @@
 ---
 sources:
+- https://rubygems.org
 - http://gems.rubyforge.org
 - http://gems.github.com
 - http://gemcutter.org
