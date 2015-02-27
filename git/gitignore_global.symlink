@@ -10,7 +10,6 @@ Icon?
 .Trashes
 
 # Linux
-.*
 *~
 *.sw[a-p]
 
