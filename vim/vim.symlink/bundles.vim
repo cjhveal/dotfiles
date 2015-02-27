@@ -48,6 +48,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-markdown'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'bbommarito/vim-slim'
+Bundle 'fatih/vim-go'
 
 " Colorschemes
 Bundle 'tomasr/molokai'

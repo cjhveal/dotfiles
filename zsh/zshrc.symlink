@@ -31,7 +31,9 @@ if [[ -d "$HOME/.rbenv" ]]; then
   eval "$(rbenv init -)"
 fi
 
-export PATH="/usr/local/share/npm/bin:$PATH"
+export GOPATH="$HOME/go"
+
+export PATH="/usr/local/share/npm/bin:/usr/local/go/bin:$GOPATH/bin:$PATH"
 
 export PATH="/usr/local/texlive/2012/bin/universal-darwin:$PATH"
 
