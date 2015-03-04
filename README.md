@@ -76,12 +76,10 @@ Run `rake uninstall` in the `.dotfiles` directory.
     ,cf - find git merge conflict markers
     ,. - find last edit location
 
-    ,gs - opens git status and allows you to stage changes
-    ,gb - opens git blame
-    ,gc - runs git commit
-    ,gg - runs git grep
-    ,gd - runs git diff
-    ,gl - runs git log
+    ,gb - open godoc in browser
+    ,gd - open godoc in vim
+    ,ge - rename symbol
+    ,gs - check interface implementations
 
     ,vc - execute current line as a vim command
     ,ve - execute entire file as vim command
