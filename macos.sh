@@ -49,7 +49,7 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 echo "Save to disk (not to iCloud) by default"
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-echo "hide the Time Machine, Volume, and User icons from the Menu Bar"
+echo "Hide the Time Machine, Volume, and User icons from the Menu Bar"
 defaults -currentHost write dontAutoLoad -array \
 	"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
 	"/System/Library/CoreServices/Menu Extras/Volume.menu" \
