@@ -15,7 +15,16 @@ if ! command_exists stow; then
   brew install stow
 fi
 
+stow --no-folding brew
+stow --no-folding zsh
 
+echo "*** running mac os setup script ***"
+./macos.sh
 
-
-
+echo "*** changing default shell to zsh ***"
+if [ -f /usr/local/bin/zsh ]; then
+  sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
+  chsh -s /usr/local/bin/zsh
+else
+  chsh -s /bin/zsh
+fi
