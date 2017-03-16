@@ -43,12 +43,34 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 echo "Reveal IP address, hostname, OS version, etc. when clicking the clock"
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
+echo "Disable transparency in the menu bar and elsewhere on Yosemite"
+defaults write com.apple.universalaccess reduceTransparency -bool true
+
+echo "Save to disk (not to iCloud) by default"
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+echo "hide the Time Machine, Volume, and User icons from the Menu Bar"
+defaults -currentHost write dontAutoLoad -array \
+	"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+	"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+	"/System/Library/CoreServices/Menu Extras/User.menu"
+defaults write com.apple.systemuiserver menuExtras -array \
+	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+	"/System/Library/CoreServices/Menu Extras/Clock.menu"
+
 
 echo ""
 echo "*****************************************"
 echo "*** Input - Trackpad, mouse, keyboard ***"
 echo "*****************************************"
 echo ""
+
+echo "Enable trackpad tap to click for this user and for the login screen"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 echo "Use scroll gesture with the Ctrl (^) modifier key to zoom"
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -66,6 +88,12 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 echo "Disable auto-correct"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+echo "Disable automatic period substitution"
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+echo "Disable automatic capitalization"
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
 echo "Disable smart quotes"
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
