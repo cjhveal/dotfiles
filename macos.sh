@@ -60,6 +60,9 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
+echo "Show battery percentage"
+defaults write com.apple.menuextra.battery ShowPercent YES
+
 
 echo ""
 echo "*****************************************"
