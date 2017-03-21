@@ -23,6 +23,8 @@ function mcd() {
 alias reload='. ~/.zshrc'
 alias reload!='zplug clear && . ~/.zshrc'
 
+alias vim='nvim'
+
 # git aliases
 
 alias ga='git add'
