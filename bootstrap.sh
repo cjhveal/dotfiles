@@ -23,9 +23,7 @@ fi
 
 stow --no-folding brew
 stow --no-folding zsh
-
-echo "*** running mac os setup script ***"
-./macos.sh
+stow --no-folding vim
 
 echo "*** changing default shell to zsh ***"
 if [ -f /usr/local/bin/zsh ]; then
@@ -34,3 +32,6 @@ if [ -f /usr/local/bin/zsh ]; then
 else
   chsh -s /bin/zsh
 fi
+
+echo "*** running mac os setup script ***"
+./macos.sh
