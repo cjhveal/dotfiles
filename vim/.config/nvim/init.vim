@@ -3,8 +3,8 @@ set nocompatible
 " Plugins
 " =======
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs 
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall
 endif
 
@@ -35,7 +35,7 @@ Plug 'wokalski/autocomplete-flow', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 
 " syntax
-Plug "sheerun/vim-polyglot"
+Plug 'sheerun/vim-polyglot'
 
 " colorschemes
 Plug 'tomasr/molokai'
