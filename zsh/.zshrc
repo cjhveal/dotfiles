@@ -6,14 +6,15 @@ fi
 
 source ~/.zplug/init.zsh
 
-zplug "~/.zsh/setopt.zsh", from:local
-zplug "~/.zsh/bindkeys.zsh", from:local
-zplug "~/.zsh/history.zsh", from:local
-zplug "~/.zsh/colors.zsh", from:local
-zplug "~/.zsh/bindkeys.zsh", from:local
-zplug "~/.zsh/aliases.zsh", from:local
-zplug "~/.zsh/exports.zsh", from:local
-zplug "~/.zsh/prompt.zsh", from:local
+source ~/.zsh/setopt.zsh
+source ~/.zsh/bindkeys.zsh
+source ~/.zsh/history.zsh
+source ~/.zsh/colors.zsh
+source ~/.zsh/bindkeys.zsh
+source ~/.zsh/aliases.zsh
+source ~/.zsh/exports.zsh
+source ~/.zsh/zsh_hooks.zsh
+source ~/.zsh/prompt.zsh
 
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
