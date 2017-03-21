@@ -25,6 +25,8 @@ stow --no-folding brew
 stow --no-folding zsh
 stow --no-folding vim
 
+pip3 install neovim
+
 echo "*** changing default shell to zsh ***"
 if [ -f /usr/local/bin/zsh ]; then
   sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
