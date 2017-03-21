@@ -62,6 +62,7 @@ function editor-info {
   zle reset-prompt
   zle -R
 }
+zle -N editor-info
 
 # Updates editor information when the keymap changes.
 function zle-keymap-select {
