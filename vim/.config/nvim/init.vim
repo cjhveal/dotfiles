@@ -11,6 +11,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 " fuzzy finding
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " undo tree
