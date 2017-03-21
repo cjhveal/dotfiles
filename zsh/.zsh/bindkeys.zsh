@@ -148,7 +148,7 @@ bindkey -M vicmd "$key_info[Left]" backward-char
 bindkey -M vicmd "$key_info[Right]" forward-char
 
 # Bind Shift + Tab to go to the previous menu item.
-bindkey -M "$keymap" "$key_info[BackTab]" reverse-menu-complete
+bindkey -M vicmd "$key_info[BackTab]" reverse-menu-complete
 
 # Complete in the middle of word.
-bindkey -M "$keymap" "$key_info[Control]I" expand-or-complete
+bindkey -M vicmd "$key_info[Control]I" expand-or-complete
