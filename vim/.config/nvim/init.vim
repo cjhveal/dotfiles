@@ -263,3 +263,34 @@ let g:jsx_ext_required = 0
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
+
+" fzf
+function! s:buflist()
+  redir => ls
+  silent ls
+  redir END
+  return split(ls, '\n')
+endfunction
+
+function! s:bufopen(e)
+  execute 'buffer' matchstr(a:e, '^[ 0-9]*')
+endfunction
+
+" Search open buffers
+nnoremap <silent> <Leader>b :call fzf#run({
+\   'source':  reverse(<sid>buflist()),
+\   'sink':    function('<sid>bufopen'),
+\   'options': '+m',
+\   'down':    len(<sid>buflist()) + 2
+\ })<CR>
+
+" Search current directory
+nnoremap <Leader>f :FZF<CR>
+
+" set launcher to open in terminal
+let g:fzf_launcher = "in_a_new_term_function %s"
+
+nnoremap <silent> <Leader>m :call fzf#run({
+\   'source': 'sed "1d" $HOME/.cache/neomru/file',
+\   'sink': 'e '
+\ })<CR>
