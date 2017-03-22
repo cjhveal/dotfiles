@@ -9,7 +9,7 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
 
 # editor & pager
-export LESS="--quit-if-one-screen --hilite-search --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --chop-long-lines --hilite-unread --window=-5"
+export LESS="--hilite-search --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --chop-long-lines --hilite-unread --window=-5"
 export PAGER="LESS"
 export EDITOR="nvim"
 
