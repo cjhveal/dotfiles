@@ -20,7 +20,7 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search", defer:3
 
-zplug "kcrawford/dockutil", use:"scripts/dockutil", if:"[[ $OSTYPE == *darwin* ]]"
+zplug "kcrawford/dockutil", use:"scripts/dockutil", as:command, if:"[[ $OSTYPE == *darwin* ]]"
 
 if ! zplug check --verbose; then
   printf "Install? [y/N]: "
