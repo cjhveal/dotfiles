@@ -73,8 +73,6 @@ if has("persistent_undo")
     set undofile
 endif
 
-
-
 " Completion
 " ==========
 set wildmode=list:longest
@@ -82,28 +80,6 @@ set wildmenu                    " Enable ctrl-n and ctrl-p to scroll thru matche
 set wildignore=*.o,*.obj,*~     " Stuff to ignore when tab completing
 set wildignore+=*vim/backups*
 set wildignore+=*.jpg,*.png,*.xpm,*.gif,*.pdf
-"
-" Indentation and Display
-" =======================
-set autoindent
-set smartindent
-set smarttab
-set shiftwidth=2
-set shiftround
-set softtabstop=2
-set tabstop=2
-set expandtab
-set list listchars=tab:\ \ ,trail:·
-
-" show cursor line for current window in normal mode
-set cursorline
-augroup cline
-    au!
-    au WinEnter * set cursorline
-    au WinLeave * set nocursorline
-    au InsertEnter * set nocursorline
-    au InsertLeave * set cursorline
-augroup END
 
 " Indentation and Display
 " =======================
@@ -134,7 +110,6 @@ set sidescroll=1
 
 " Turn Off Swap Files
 " ===================
-
 set noswapfile
 set nobackup
 set nowritebackup
@@ -165,7 +140,6 @@ endif
 
 " Key Mappings
 " ============
-
 
 " Glorious leader
 let mapleader="\<Space>"
