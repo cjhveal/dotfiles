@@ -152,3 +152,5 @@ bindkey -M vicmd "$key_info[BackTab]" reverse-menu-complete
 
 # Complete in the middle of word.
 bindkey -M vicmd "$key_info[Control]I" expand-or-complete
+
+bindkey -v
