@@ -137,6 +137,11 @@ if &t_Co == 8 && $TERM !~# '^linux'
   set t_Co=16
 endif
 
+" Filetype Config
+" ===============
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 
 " Key Mappings
 " ============
