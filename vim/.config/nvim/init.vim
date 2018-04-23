@@ -312,7 +312,5 @@ nnoremap <Leader>f :FZF<CR>
 " set launcher to open in terminal
 let g:fzf_launcher = "in_a_new_term_function %s"
 
-nnoremap <silent> <Leader>m :call fzf#run({
-\   'source': 'sed "1d" $HOME/.cache/neomru/file',
-\   'sink': 'e '
-\ })<CR>
+" undotree
+nnoremap <Leader>u :UndotreeToggle<CR>
