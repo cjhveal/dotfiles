@@ -14,6 +14,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 
+" file tree
+Plug 'scrooloose/nerdtree'
+
 " undo tree
 Plug 'mbbill/undotree'
 
@@ -210,6 +213,9 @@ nnoremap ` '
 
 " Plugin Settings
 " ===============
+
+" NERDTree
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
