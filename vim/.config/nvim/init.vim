@@ -38,6 +38,10 @@ Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'wokalski/autocomplete-flow', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 
+" formatting
+Plug 'sbdchd/neoformat'
+Plug 'godlygeek/tabular'
+
 " syntax
 Plug 'sheerun/vim-polyglot'
 
@@ -238,6 +242,37 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<C-j>"
+
+" Neoformat
+
+let g:neoformat_only_msg_on_error = 1
+
+let g:neoformat_javascript_myprettier = {
+  \ 'exe': 'prettier',
+  \ 'args': ['--single-quote',
+           \ '--trailing-comma es5',
+           \ '--print-width 100',
+           \ '--stdin'],
+  \  'stdin': 1,
+  \ }
+
+let g:neoformat_enabled_javascript = ['myprettier']
+
+function! ToggleAutoFormat()
+  if !exists('#jsfmt#BufWritePre')
+    augroup jsfmt
+      autocmd!
+      autocmd BufWritePre *.js,*.jsx,*.js.flow Neoformat
+    augroup END
+  else
+    augroup jsfmt
+      autocmd!
+  endif
+endfunction
+
+" call ToggleAutoFormat()
+
+nnoremap <Leader>tf :call ToggleAutoFormat()<CR>
 
 " pangloss/vim-javascript
 let g:javascript_plugin_flow = 1
