@@ -14,3 +14,5 @@ export PAGER="LESS"
 export EDITOR="nvim"
 
 export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
+
+export GPG_TTY=$(tty)
