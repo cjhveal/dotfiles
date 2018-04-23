@@ -69,6 +69,7 @@ set nofoldenable                " Don't fold by default
 set autoread                    " Reload files changed outside vim
 set nowrap                      " Don't wrap lines
 set visualbell                  " Don't beep
+set ruler                       " Show row,col of cursor
 
 " enable filetype plugins
 if has('autocmd')
