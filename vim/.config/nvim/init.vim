@@ -149,6 +149,7 @@ endif
 " ===============
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd Filetype markdown setlocal spell wrap linebreak nolist
 
 
 " Key Mappings
