@@ -4,6 +4,17 @@ function current_branch() {
   echo ${ref#refs/heads/}
 }
 
+function prompt_node_information() {
+  (which node > /dev/null) || return
+
+  NODE_VERSION=$(which node > /dev/null && echo -ne `node --version | sed 's/^v//'`);
+
+  # NPM_VERSION=$(which npm > /dev/null && echo -ne `npm --version`);
+
+  echo -ne "($NODE_VERSION)"
+}
+
+
 function prompt_git_information() {
   tester=$(git rev-parse --git-dir 2> /dev/null) || return
 
@@ -57,6 +68,7 @@ fi
 local dir='$PR_BLUE${PWD/#$HOME/~}%{$reset_color%}'
 local git_branch='$(prompt_git_information)'
 local prompt_char='$(prompt_character)'
+local node_info='$PR_GREEN$(prompt_node_information)%{$reset_color%}'
 
 local time='${PR_CYAN}[%D{%Kh%M %a %f/%-m}]%{$reset_color%}'
 
@@ -70,7 +82,7 @@ ZSH_THEME_GIT_PROMPT_RENAMED="$PR_MAGENTA➜"
 ZSH_THEME_GIT_PROMPT_UNMERGED="$PR_YELLOW═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="$PR_CYAN✭"
 
-export PROMPT="╭─${user}${host}:${dir} ${git_branch}
+export PROMPT="╭─${user}${host}:${dir} ${git_branch} ${node_info}
 ╰─${prompt_char} "
 export RPROMPT="${return} ${time}"
 export PROMPT2="(%_):-${prompt_char}"
