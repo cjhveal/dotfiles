@@ -143,6 +143,7 @@ bindkey -M vicmd "$key_info[End]" end-of-line
 bindkey -M vicmd "$key_info[Insert]" overwrite-mode
 bindkey -M vicmd "$key_info[Delete]" delete-char
 bindkey -M vicmd "$key_info[Backspace]" backward-delete-char
+bindkey -M viins "$key_info[Backspace]" backward-delete-char
 
 bindkey -M vicmd "$key_info[Left]" backward-char
 bindkey -M vicmd "$key_info[Right]" forward-char
