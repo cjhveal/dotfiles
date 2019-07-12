@@ -16,3 +16,5 @@ export EDITOR="nvim"
 export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 
 export GPG_TTY=$(tty)
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
