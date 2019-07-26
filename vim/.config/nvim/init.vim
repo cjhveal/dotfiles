@@ -28,19 +28,26 @@ Plug 'tpope/vim-repeat'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
 
+" ui customization
+Plug 'mhinz/vim-signify'
+Plug 'itchyny/lightline.vim'
+Plug 'Yggdroot/indentLine'
+
 " completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'ervandew/supertab'
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javascript.jsx'] }
-Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'wokalski/autocomplete-flow', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'wokalski/autocomplete-flow', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 
 " formatting
 Plug 'sbdchd/neoformat'
 Plug 'godlygeek/tabular'
+Plug 'reedes/vim-pencil'
+Plug 'AndrewRadev/splitjoin.vim'
 
 " syntax
 Plug 'sheerun/vim-polyglot'
@@ -135,6 +142,7 @@ set viminfo='100,f1  " Save up to 100 marks, enable capital marks
 " ===================
 syntax on
 syntax enable
+syntax sync minlines=1000
 set t_Co=256 " ?
 set background=dark
 let g:molokai_original = 1
@@ -237,6 +245,21 @@ let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
 let g:tern#command = ['tern']
 let g:tern#arguments = ['--persistent']
 
+" coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+nnoremap <silent> <Leader>K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if &filetype == 'vim'
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
 " (Super)Tab
 let g:SuperTabClosePreviewOnPopupClose = 1
 autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
@@ -275,6 +298,23 @@ endfunction
 " call ToggleAutoFormat()
 
 nnoremap <Leader>tf :call ToggleAutoFormat()<CR>
+
+" Lightline
+" Integrate Coc with Lightline
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'currentfunction': 'CocCurrentFunction'
+      \ },
+      \ }
 
 " pangloss/vim-javascript
 let g:javascript_plugin_flow = 1
