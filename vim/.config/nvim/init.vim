@@ -268,6 +268,9 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<C-j>"
 
+" CoC Format
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " Neoformat
 
 let g:neoformat_only_msg_on_error = 1
