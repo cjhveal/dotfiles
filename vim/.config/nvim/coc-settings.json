@@ -1,0 +1,13 @@
+{
+  "languageserver": {
+    "flow": {
+      "command": "npx",
+      "args": ["flow", "lsp"],
+      "filetypes": ["javascript", "javascriptreact"],
+      "initializationOptions": {},
+      "requireRootPattern": true,
+      "settings": {},
+      "rootPatterns": [".flowconfig"]
+    }
+  }
+}
