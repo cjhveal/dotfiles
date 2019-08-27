@@ -33,6 +33,8 @@ fi
 
 zplug load
 
+export PATH="$PATH:$HOME/bin"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f ~/.local-zshrc ] && source ~/.local-zshrc
