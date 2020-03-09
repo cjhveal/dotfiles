@@ -37,6 +37,7 @@ alias gl='git pull'
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gp='git push'
 alias gst='git status'
+alias gcp='git cherry-pick'
 
 # Disable correction.
 alias ack='nocorrect ack'
@@ -53,3 +54,12 @@ alias mkdir='nocorrect mkdir'
 alias mv='nocorrect mv'
 alias mysql='nocorrect mysql'
 alias rm='nocorrect rm'
+
+# fzf
+# fbr - checkout git branch
+function fbr() {
+  local branches branch
+  branches=$(git --no-pager branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}

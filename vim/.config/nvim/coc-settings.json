@@ -1,4 +1,6 @@
 {
+  "eslint.quiet": false,
+  "javascript.validate.enable": false,
   "languageserver": {
     "flow": {
       "command": "npx",
