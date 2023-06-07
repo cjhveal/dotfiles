@@ -3,13 +3,13 @@
   "javascript.validate.enable": false,
   "languageserver": {
     "flow": {
-      "command": "npx",
-      "args": ["flow", "lsp"],
+      "command": "./node_modules/.bin/flow",
+      "args": ["lsp"],
       "filetypes": ["javascript", "javascriptreact"],
       "initializationOptions": {},
       "requireRootPattern": true,
       "settings": {},
       "rootPatterns": [".flowconfig"]
     }
-  }
+  },
 }
