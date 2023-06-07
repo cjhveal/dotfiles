@@ -33,11 +33,13 @@ alias gc='git commit'
 alias gco='git checkout'
 alias gd='git diff'
 alias gds='git diff --cached'
+alias gdw='git diff --word-diff=color'
 alias gl='git pull'
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gp='git push'
 alias gst='git status'
 alias gcp='git cherry-pick'
+alias grp='git rev-parse'
 
 # Disable correction.
 alias ack='nocorrect ack'
