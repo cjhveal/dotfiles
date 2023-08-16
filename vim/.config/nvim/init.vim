@@ -34,7 +34,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'Yggdroot/indentLine'
 
 " completion
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
 " Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javascript.jsx'] }
@@ -200,6 +200,15 @@ nmap \l :rightbelow vnew<CR>
 nmap \k    :leftabove  new<CR>
 nmap \j  :rightbelow new<CR>
 
+" Tab Management
+" -----------------------
+nmap <Leader>tn :tabnew<CR>
+nmap <Leader>tl :tabnext<CR>
+nmap <Leader>th :tabprev<CR>
+nmap <Leader>tq :tabclose<CR>
+nmap <Leader>tml :tabmove +1<CR>
+nmap <Leader>tmh :tabmove -1<CR>
+
 " Searching
 " ---------
 
@@ -332,6 +341,14 @@ let g:jsx_ext_required = 0
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
+
+" vim-pencil
+let g:pencil#conceallevel = 0
+
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
+set conceallevel=0
 
 " fzf
 function! s:buflist()
