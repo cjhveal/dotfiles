@@ -238,6 +238,9 @@ defaults write com.apple.dock launchanim -bool false
 echo "Show indicator lights for open applications in the Dock"
 defaults write com.apple.dock show-process-indicators -bool true
 
+echo "Show battery percentage in Control Center"
+defaults -currentHost write com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
 # TODO: dockutil to setup dock
 
 echo ""
