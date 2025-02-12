@@ -1,6 +1,7 @@
 {
   "eslint.quiet": false,
   "javascript.validate.enable": false,
+  "suggest.noselect": true,
   "languageserver": {
     "flow": {
       "command": "./node_modules/.bin/flow",
