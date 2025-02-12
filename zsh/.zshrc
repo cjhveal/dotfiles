@@ -48,3 +48,7 @@ export NVM_DIR="$HOME/.nvm"
 [[ -f /Users/codyveal/.config/yarn/global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/codyveal/.config/yarn/global/node_modules/tabtab/.completions/yarn.zsh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"

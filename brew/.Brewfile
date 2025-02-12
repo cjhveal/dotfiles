@@ -20,6 +20,13 @@ brew 'wget'
 brew 'zsh'
 brew 'zsh-completions'
 
+brew 'openssl'
+brew 'readline'
+brew 'sqlite3'
+brew 'xz'
+brew 'zlib'
+brew 'tcl-tk@8'
+
 cask 'flux'
 cask 'firefox'
 cask 'google-chrome'
