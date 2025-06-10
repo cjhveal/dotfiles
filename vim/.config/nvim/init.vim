@@ -249,6 +249,7 @@ let g:coc_global_extensions = [
       \'coc-git',
       \'coc-prettier',
       \'coc-tsserver',
+      \'@yaegassy/coc-tailwindcss3',
       \]
 
 
