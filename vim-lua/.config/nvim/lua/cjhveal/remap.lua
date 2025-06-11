@@ -22,4 +22,30 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "*", "*zzzv")
 vim.keymap.set("n", "#", "#zzzv")
+-- keep cursor centered when scrolling half pages
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- Move selections up or down
+vim.keymap.set("x", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("x", "K", ":m '<-2<CR>gv=gv")
+
+-- delete/paste over without changing register
+vim.keymap.set({ "n", "x" }, "<leader>d", [["_d]])
+vim.keymap.set("x", "<leader>p", [["_dP]])
+
+-- yank to clipboard
+vim.keymap.set({ "n", "x" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+-- fix common capitalization typos
+vim.keymap.set("ca", "W", "w")
+vim.keymap.set("ca", "Q", "q")
+vim.keymap.set("ca", "WQ", "wq")
+vim.keymap.set("ca", "Wq", "wq")
+
+-- Swap ' and ` because ` is more useful:
+-- ` jumps to row & col of mark
+-- ' jumps only to row of mark
+vim.keymap.set("n", "'", "`")
+vim.keymap.set("n", "`", "'")
