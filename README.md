@@ -33,11 +33,12 @@ An incomplete list of customizations:
 
 ### Vim
 
-Neovim configurations are currently being rewritten from vimscript to lua.
+Neovim configurations are currently being rewritten, see `vim-lua` folder. Feature parity is roughly complete with a few missing items.
 
-Package Manager is `vim-plug`, transitioning to `lazy.nvim`
-
-Uses `CoC` for completions/lsp integration, considering `blink` as a replacement.
+plugins to add:
+`mini.surround` for changing wrapping characters
+`nvim-tree` file explorer
+`which-key` for key suggestion
 
 #### Keybinds
 
