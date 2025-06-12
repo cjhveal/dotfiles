@@ -11,6 +11,7 @@ function on_attach(on_attach, name)
     end,
   })
 end
+-- @TODO: Attach keybinds and configure capabilities
 
 
 return {
