@@ -1,7 +1,7 @@
 return {
   "ibhagwan/fzf-lua",
   -- optional for icon support
-  -- dependencies = { "echasnovski/mini.icons" },
+  dependencies = { "echasnovski/mini.icons" },
   opts = {},
   keys = {
     {"<leader><space>", "<cmd>FzfLua files<CR>", desc = "Find Files"},
