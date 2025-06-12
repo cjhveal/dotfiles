@@ -35,6 +35,8 @@ return {
         exclude = { "vue" }, -- filetypes for which you don't want to enable inlay hints
       },
       servers = {
+        -- Typescript/React
+        -- ****************
         vtsls = {
           -- explicitly add default filetypes, so that we can extend
           -- them in related extras
@@ -74,11 +76,38 @@ return {
             },
           },
         },
+        -- Lua
+        -- ***
+        lua_ls = {
+          settings = {
+            Lua = {
+              workspace = {
+                checkThirdParty = false,
+              },
+              codeLens = {
+                enable = true,
+              },
+              completion = {
+                callSnippet = "Replace",
+              },
+              doc = {
+                privateName = { "^_" },
+              },
+              hint = {
+                enable = true,
+                setType = false,
+                paramType = true,
+                paramName = "Disable",
+                semicolon = "Disable",
+                arrayIndex = "Disable",
+              },
+            },
+          },
+        },
       },
       setup = {
-        vtsls = function(_, _)
-          -- do something here?
-        end
+        -- custom setup per server here
+        -- return `true` if running lspconfig `setup` here
       },
     },
     config = function(_, opts)
