@@ -31,6 +31,7 @@ brew 'xz'
 brew 'zlib'
 brew 'tcl-tk@8'
 
+cask 'dbeaver-community'
 cask 'flux'
 cask 'firefox'
 cask 'google-chrome'
