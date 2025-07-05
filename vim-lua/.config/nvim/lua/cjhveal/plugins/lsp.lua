@@ -114,8 +114,25 @@ return {
     config = function(_, opts)
       vim.diagnostic.config(vim.deepcopy(opts.diagnostics))
 
+      local has_blink, blink = pcall(require, "blink.cmp")
+      local capabilities = vim.tbl_deep_extend(
+        "force",
+        {},
+        vim.lsp.protocol.make_client_capabilities(),
+        has_blink and blink.get_lsp_capabilities() or {},
+        opts.capabilities or {}
+      )
+
+
       local servers = opts.servers
-      for server, server_opts in pairs(servers) do
+      for server, base_opts in pairs(servers) do
+        local server_opts = vim.tbl_deep_extend("force", {
+          capabilities = vim.deepcopy(capabilities),
+        }, base_opts or {})
+
+        if server_opts.enabled == false then
+          return
+        end
         if opts.setup[server] then
           if opts.setup[server](server, server_opts) then
             return
