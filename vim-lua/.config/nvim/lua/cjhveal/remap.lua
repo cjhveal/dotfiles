@@ -58,3 +58,18 @@ vim.keymap.set("ca", "Wq", "wq")
 -- ' jumps only to row of mark
 vim.keymap.set("n", "'", "`")
 vim.keymap.set("n", "`", "'")
+
+-- diagnostics
+local diagnostic_goto = function(count, severity)
+  severity = severity and vim.diagnostic.severity[severity] or nil
+  return function()
+    vim.diagnostic.jump({ count = count, severity = severity })
+  end
+end
+vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
+vim.keymap.set("n", "]d", diagnostic_goto(1), { desc = "Next Diagnostic" })
+vim.keymap.set("n", "[d", diagnostic_goto(-1), { desc = "Prev Diagnostic" })
+vim.keymap.set("n", "]e", diagnostic_goto(1, "ERROR"), { desc = "Next Error" })
+vim.keymap.set("n", "[e", diagnostic_goto(-1, "ERROR"), { desc = "Prev Error" })
+vim.keymap.set("n", "]w", diagnostic_goto(1, "WARN"), { desc = "Next Warning" })
+vim.keymap.set("n", "[w", diagnostic_goto(-1, "WARN"), { desc = "Prev Warning" })
