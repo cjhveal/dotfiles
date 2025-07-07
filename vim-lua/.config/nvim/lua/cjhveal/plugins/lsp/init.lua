@@ -216,6 +216,7 @@ return {
     keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
     build = ":MasonUpdate",
     opts = {
+      -- @TODO: Automatically install these with mason
       ensure_installed = {
         "eslint_d",
         "hadolint",

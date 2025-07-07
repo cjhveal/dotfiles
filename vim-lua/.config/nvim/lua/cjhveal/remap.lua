@@ -18,12 +18,12 @@ vim.keymap.set("n", "\\k",   "<cmd>leftabove  new<CR>")
 vim.keymap.set("n", "\\j",  "<cmd>rightbelow new<CR>")
 
 -- Tab managment
-vim.keymap.set("n", "<leader><Tab>n", "<cmd>tabnew<CR>")
-vim.keymap.set("n", "<leader><Tab><Tab>", "<cmd>tabn<CR>")
-vim.keymap.set("n", "<leader><Tab>]", "<cmd>tabn<CR>")
-vim.keymap.set("n", "<leader><Tab>[", "<cmd>tabp<CR>")
-vim.keymap.set("n", "<leader><Tab>d", "<cmd>tabclose<CR>")
-vim.keymap.set("n", "<leader><Tab>l", "<cmd>tablast<CR>")
+vim.keymap.set("n", "<leader><Tab>n", "<cmd>tabnew<CR>", {desc = "New Tab"})
+vim.keymap.set("n", "<leader><Tab><Tab>", "<cmd>tabn<CR>", {desc = "Next Tab"})
+vim.keymap.set("n", "<leader><Tab>]", "<cmd>tabn<CR>", {desc = "Next Tab"})
+vim.keymap.set("n", "<leader><Tab>[", "<cmd>tabp<CR>", {desc = "Previous Tab"})
+vim.keymap.set("n", "<leader><Tab>d", "<cmd>tabclose<CR>", {desc = "Close Tab"})
+vim.keymap.set("n", "<leader><Tab>l", "<cmd>tablast<CR>", {desc = "Last Used Tab"})
 
 
 -- Keep searches in center of screen
