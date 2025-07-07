@@ -1,6 +1,7 @@
 return {
   "echasnovski/mini.icons",
   opts = {
+    style = 'glyph',
     file = {
       [".eslintrc.js"] = { glyph = "󰱺", hl = "MiniIconsYellow" },
       [".node-version"] = { glyph = "", hl = "MiniIconsGreen" },
@@ -16,4 +17,8 @@ return {
       dotenv = { glyph = "", hl = "MiniIconsYellow" },
     },
   },
+  config = function(opts)
+    require('mini.icons').setup()
+    MiniIcons.mock_nvim_web_devicons()
+  end,
 }
