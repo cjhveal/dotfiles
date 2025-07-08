@@ -1,3 +1,6 @@
+
+local icons = require('cjhveal.config').icons
+
 return {
   'nvim-lualine/lualine.nvim',
   opts = {
@@ -12,11 +15,33 @@ return {
         { "filename", path = 1},
       },
       lualine_c = {
-        'branch', 'diff',
+        'branch',
+        {
+          'diff',
+          symbols = {
+            added    = icons.git.added,
+            modified = icons.git.modified,
+            removed  = icons.git.removed,
+          },
+        },
       },
-      lualine_x = { 'diagnostics', 'lsp_status', },
+      lualine_x = {
+        {
+          'diagnostics',
+          symbols = {
+            error = icons.diagnostics.Error,
+            warn = icons.diagnostics.Warn,
+            info = icons.diagnostics.Info,
+            hint = icons.diagnostics.Hint,
+          },
+        },
+        'lsp_status',
+      },
       lualine_y = { 'filetype' },
-      lualine_z = { 'progress', },
+      lualine_z = { 
+        { "progress", separator = " ", padding = { left = 1, right = 0 } },
+        { "location", padding = { left = 0, right = 1 } },
+      },
     },
     inactive_sections = {
       lualine_c = {
@@ -26,3 +51,18 @@ return {
     }
   },
 }
+
+
+--[[
+    sections = {
+      lualine_c = {
+        { "filename", path = 1},
+      },
+    },
+    inactive_sections = {
+      lualine_c = {
+        { "filename", path = 1},
+      },
+    }
+  },
+]]

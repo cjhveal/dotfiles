@@ -1,24 +1,32 @@
 -- @TODO: Attach keybinds and configure capabilities
 
+local Config = require('cjhveal.config');
 local LspUtils = require('cjhveal.utils.lsp');
 
 return {
   {
     "neovim/nvim-lspconfig",
-    diagnostics = {
-      underline = true,
-      update_in_insert = false,
-      virtual_text = {
-        spacing = 4,
-        source = "if_many",
-        prefix = "●",
-        -- this will set set the prefix to a function that returns the diagnostics icon based on the severity
-        -- this only works on a recent 0.10.0 build. Will be set to "●" when not supported
-        -- prefix = "icons",
-      },
-      severity_sort = true,
-    },
     opts = {
+      diagnostics = {
+        underline = true,
+        update_in_insert = false,
+        virtual_text = {
+          spacing = 4,
+          source = "if_many",
+          -- this will set set the prefix to a function that returns the diagnostics icon based on the severity
+          -- this only works on a recent 0.10.0 build. Will be set to "●" when not supported
+          prefix = "icons",
+        },
+        severity_sort = true,
+        signs = {
+          text = {
+            [vim.diagnostic.severity.ERROR] = Config.icons.diagnostics.Error,
+            [vim.diagnostic.severity.WARN] = Config.icons.diagnostics.Warn,
+            [vim.diagnostic.severity.HINT] = Config.icons.diagnostics.Hint,
+            [vim.diagnostic.severity.INFO] = Config.icons.diagnostics.Info,
+          }
+        },
+      },
       inlay_hints = {
         enabled = true,
         exclude = { "vue" }, -- filetypes for which you don't want to enable inlay hints
@@ -155,6 +163,15 @@ return {
 
 
 
+      -- diagnostics signs
+      if type(opts.diagnostics.signs) ~= "boolean" then
+        for severity, icon in pairs(opts.diagnostics.signs.text) do
+          local name = vim.diagnostic.severity[severity]:lower():gsub("^%l", string.upper)
+          name = "DiagnosticSign" .. name
+          vim.fn.sign_define(name, { text = icon, texthl = name, numhl = "" })
+        end
+      end
+
       if opts.inlay_hints.enabled then
         LspUtils.on_supports_method("textDocument/inlayHint", function(_, buffer)
           if
@@ -178,6 +195,18 @@ return {
         end)
       end
       ]]--
+
+      if type(opts.diagnostics.virtual_text) == "table" and opts.diagnostics.virtual_text.prefix == "icons" then
+        opts.diagnostics.virtual_text.prefix = vim.fn.has("nvim-0.10.0") == 0 and "●"
+          or function(diagnostic)
+            local icons = Config.icons.diagnostics
+            for d, icon in pairs(icons) do
+              if diagnostic.severity == vim.diagnostic.severity[d:upper()] then
+                return icon
+              end
+            end
+          end
+      end
 
       vim.diagnostic.config(vim.deepcopy(opts.diagnostics))
 
