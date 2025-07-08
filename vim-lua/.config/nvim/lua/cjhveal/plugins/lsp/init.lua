@@ -260,8 +260,9 @@ return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
-        "lua_ls",
         "jsonls",
+        "lua_ls",
+        "marksman",
         "tailwindcss",
         "vtsls",
         "yamlls",
