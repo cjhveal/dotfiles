@@ -7,15 +7,15 @@ vim.g.maplocalleader = " "
 vim.keymap.set("n", "Y", "y$")
 
 -- Split window in direction
-vim.keymap.set("n", "|h", "<cmd>topleft  vnew<CR>")
-vim.keymap.set("n", "|l", "<cmd>botright vnew<CR>")
-vim.keymap.set("n", "|k", "<cmd>topleft  new<CR>")
-vim.keymap.set("n", "|j", "<cmd>botright new<CR>")
+vim.keymap.set("n", "|h", "<cmd>topleft  vnew<CR>", {desc="Split Window Left"})
+vim.keymap.set("n", "|l", "<cmd>botright vnew<CR>", {desc="Split Window Right"})
+vim.keymap.set("n", "|k", "<cmd>topleft  new<CR>", {desc="Split Window Top"})
+vim.keymap.set("n", "|j", "<cmd>botright new<CR>", {desc="Split Window Bottom"})
 -- Split buffer in direction
-vim.keymap.set("n", "\\h", "<cmd>leftabove  vnew<CR>")
-vim.keymap.set("n", "\\l", "<cmd>rightbelow vnew<CR>")
-vim.keymap.set("n", "\\k",   "<cmd>leftabove  new<CR>")
-vim.keymap.set("n", "\\j",  "<cmd>rightbelow new<CR>")
+vim.keymap.set("n", "\\h", "<cmd>leftabove  vnew<CR>", {desc="Split Buffer Left"})
+vim.keymap.set("n", "\\l", "<cmd>rightbelow vnew<CR>", {desc="Split Buffer Right"})
+vim.keymap.set("n", "\\k",   "<cmd>leftabove  new<CR>", {desc="Split Buffer Up"})
+vim.keymap.set("n", "\\j",  "<cmd>rightbelow new<CR>", {desc="Split Buffer Down"})
 
 -- Tab managment
 vim.keymap.set("n", "<leader><Tab>n", "<cmd>tabnew<CR>", {desc = "New Tab"})
