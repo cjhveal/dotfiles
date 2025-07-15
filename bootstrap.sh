@@ -24,6 +24,7 @@ fi
 stow --no-folding brew
 stow --no-folding zsh
 stow --no-folding vim
+stow --no-folding zk
 
 pip3 install neovim
 

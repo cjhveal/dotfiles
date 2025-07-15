@@ -266,6 +266,7 @@ return {
         "tailwindcss",
         "vtsls",
         "yamlls",
+        "zk",
       },
     },
     dependencies = {

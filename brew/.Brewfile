@@ -21,6 +21,7 @@ brew 'the_silver_searcher'
 brew 'tmux'
 brew 'tree-sitter'
 brew 'wget'
+brew 'zk'
 brew 'zsh'
 brew 'zsh-completions'
 
