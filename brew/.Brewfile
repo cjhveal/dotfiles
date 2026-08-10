@@ -32,6 +32,8 @@ brew 'xz'
 brew 'zlib'
 brew 'tcl-tk@8'
 
+cask '1password'
+cask '1password-cli'
 cask 'dbeaver-community'
 cask 'flux'
 cask 'firefox'
