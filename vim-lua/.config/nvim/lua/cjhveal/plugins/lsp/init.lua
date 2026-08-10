@@ -221,22 +221,30 @@ return {
 
 
       local servers = opts.servers
+      local enable = {} ---@type string[]
       for server, base_opts in pairs(servers) do
         local server_opts = vim.tbl_deep_extend("force", {
           capabilities = vim.deepcopy(capabilities),
         }, base_opts or {})
 
         if server_opts.enabled == false then
-          return
+          vim.lsp.enable(server, false)
+          goto continue
         end
-        if opts.setup[server] then
-          if opts.setup[server](server, server_opts) then
-            return
-          end
+        if opts.setup[server] and opts.setup[server](server, server_opts) then
+          goto continue
         end
 
-        require("lspconfig")[server].setup(server_opts)
+        -- `keys` and `enabled` are ours, not part of vim.lsp.Config
+        server_opts.keys = nil
+        server_opts.enabled = nil
+
+        vim.lsp.config(server, server_opts)
+        table.insert(enable, server)
+
+        ::continue::
       end
+      vim.lsp.enable(enable)
     end
   },
   {
